@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sGoldChunk" type="RESOURCE"/>
+  <resource name="sGoldNugget" type="RESOURCE"/>
+  <resource name="sGoldEgg" type="RESOURCE"/>
+  <resource name="sGoldBar" type="RESOURCE"/>
+  <resource name="sGoldBarDraw" type="RESOURCE"/>
+  <resource name="sGoldBars" type="RESOURCE"/>
+  <resource name="sGoldBarsDraw" type="RESOURCE"/>
+  <resource name="sGoldIdol" type="RESOURCE"/>
+  <resource name="sGoldIdolIco" type="RESOURCE"/>
+  <resource name="sCrystalSkull" type="RESOURCE"/>
+  <resource name="sCrystalSkullIco" type="RESOURCE"/>
+  <resource name="sLampItem" type="RESOURCE"/>
+  <resource name="sLampRedItem" type="RESOURCE"/>
+  <resource name="sScarab" type="RESOURCE"/>
+  <resource name="sScarabDisp" type="RESOURCE"/>
+  <resource name="sBell" type="RESOURCE"/>
+  <resource name="sDiamond" type="RESOURCE"/>
+  <resource name="sRuby" type="RESOURCE"/>
+  <resource name="sRubyBig" type="RESOURCE"/>
+  <resource name="sSapphire" type="RESOURCE"/>
+  <resource name="sSapphireBig" type="RESOURCE"/>
+  <resource name="sEmerald" type="RESOURCE"/>
+  <resource name="sEmeraldBig" type="RESOURCE"/>
+</resources>

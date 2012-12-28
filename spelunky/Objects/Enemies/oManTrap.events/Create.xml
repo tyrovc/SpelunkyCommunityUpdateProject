@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="604" library="1">
+      <!--action name: Inherited-->
+      <kind>NORMAL</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>false</canApplyTo>
+      <actionType>FUNCTION</actionType>
+      <functionName>action_inherited</functionName>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments/>
+    </action>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">makeActive();
+setCollisionBounds(2, 0, sprite_width-2, sprite_height);
+xVel = 2.5;
+image_speed = 0.5;
+
+// stats
+type = "ManTrap";
+hp = 3;
+invincible = 0;
+favor = 2;
+
+IDLE = 0;
+WALK = 1;
+ATTACK = 2;
+SLEEPY = 96;
+EATING = 97;
+STUNNED = 98;
+DEAD = 99;
+status = IDLE;
+
+ateShopkeeper = false;
+
+bounced = false;
+dead = false;
+counter = 0;
+
+LEFT = 0;
+RIGHT = 1;
+facing = RIGHT;
+
+shakeCounter = 0;
+shakeToggle = 1;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

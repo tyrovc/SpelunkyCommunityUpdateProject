@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sGhostLeft" type="RESOURCE"/>
+  <resource name="sGhostRight" type="RESOURCE"/>
+  <resource name="sGhostTurnLeft" type="RESOURCE"/>
+  <resource name="sGhostTurnRight" type="RESOURCE"/>
+  <resource name="sGhostDisappear" type="RESOURCE"/>
+</resources>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (oPlayer1.y &lt; 156)
+{
+draw_set_font(global.myFontSmall);
+draw_set_color(c_yellow);
+draw_text(128+16, 32, "SECRET CHALLENGES");
+draw_set_color(c_white);
+tMini1 = floor(scrGetScore(10) / 10000);
+tMini2 = floor((scrGetScore(10)-(tMini1*10000)) / 100);
+tMini3 = floor(scrGetScore(10)-(tMini1*10000)-(tMini2*100));
+draw_text(128, 48, "SUN:   " + string(tMini1));
+draw_text(128, 64, "MOON:  " + string(tMini2));
+draw_text(128, 80, "STARS: " + string(tMini3));
+
+if (oPlayer1.y &lt; 48+16)
+{
+    draw_set_color(c_yellow);
+    draw_text(168, 96, "SUN ROOM");
+    draw_set_color(c_white);
+    if (tMoney &gt;= sunGold)
+    {
+        if (false) // (global.isTunnelMan)
+        {
+            draw_text(128, 112, "NO MATTOCKS ALLOWED!");
+            draw_text(128, 128, "THIS MEANS YOU!");
+            draw_text(128, 144, "");
+            draw_text(128, 160, "");
+        }
+        else
+        {
+            draw_text(128, 112, "KEEP YOURSELF AND");
+            draw_text(128, 128, "THE DAMSEL ALIVE");
+            draw_text(128, 144, "FOR AS LONG AS");
+            draw_text(128, 160, "POSSIBLE!");
+        }
+    }
+    else
+    {
+        draw_text(128, 112, "LOCKED.");
+    }
+}
+else if (oPlayer1.y &lt; 80+16)
+{
+    draw_set_color(c_yellow);
+    draw_text(168, 96, "MOON ROOM");
+    draw_set_color(c_white);
+    if (tTime &gt; 0 and tTime &lt;= moonGold)
+    {
+        if (false) // (global.isTunnelMan)
+        {
+            draw_text(128, 112, "NO MATTOCKS ALLOWED!");
+            draw_text(128, 128, "THIS MEANS YOU!");
+            draw_text(128, 144, "");
+            draw_text(128, 160, "");
+        }
+        else
+        {
+            draw_text(128, 112, "SHOOT THE MOVING");
+            draw_text(128, 128, "TARGETS WITH YOUR");
+            draw_text(128, 144, "BOW AND ARROWS!");
+        }
+    }
+    else
+    {
+        draw_text(128, 112, "LOCKED.");
+    }
+}
+else if (oPlayer1.y &lt; 112+16)
+{
+    draw_set_color(c_yellow);
+    draw_text(168, 96, "STARS ROOM");
+    draw_set_color(c_white);
+    if (tKills &gt;= starsGold)
+    {
+        if (false) // (global.isTunnelMan)
+        {
+            draw_text(128, 112, "NO MATTOCKS ALLOWED!");
+            draw_text(128, 128, "THIS MEANS YOU!");
+            draw_text(128, 144, "");
+            draw_text(128, 160, "");
+        }
+        else
+        {
+            draw_text(128, 112, "KILL AS MANY ANGRY");
+            draw_text(128, 128, "SHOPKEEPS AS YOU CAN");
+            draw_text(128, 144, "BEFORE THEY GET YOU!");
+        }
+    }
+    else
+    {
+        draw_text(128, 112, "LOCKED.");
+    }
+}
+else if (oPlayer1.y &lt; 160)
+{
+    draw_set_color(c_yellow);
+    draw_text(160, 96, "CHANGING ROOM");
+    draw_set_color(c_white);
+    if (tSaves &gt;= 8)
+    {
+        draw_text(128, 112, "LADY IN RED...");
+    }
+    else
+    {
+        draw_text(128, 112, "LOCKED.");
+    }
+    with oNew
+    {
+        visible = false;
+    }
+}
+
+}
+else
+{
+with oNew
+{
+    visible = true;
+}
+draw_set_font(global.myFontSmall);
+draw_set_color(c_yellow);
+draw_text(160, 32, "TOP DEFILERS");
+draw_set_color(c_white);
+draw_text(128, 48, "MONEY:  " + string(scrGetScore(1)));
+draw_text(128, 64, "KILLS:  " + string(scrGetScore(3)));
+draw_text(128, 80, "SAVES:  " + string(scrGetScore(4)));
+// only display time if won
+if (scrGetScore(6) &gt; 0)
+{
+    s = scrGetScore(2);
+    // s = floor(s / 1000);
+    m = 0;
+    while (s &gt; 59)
+    {
+        s -= 60;
+        m += 1;
+    }
+    
+    draw_set_color(c_white);
+    draw_text(128, 96, "TIME: ");
+    if (s &lt; 10) draw_text(128+64, 96, string(m) + ":0" + string(s));
+    else draw_text(128+64, 96, string(m) + ":" + string(s));
+}
+draw_set_color(c_yellow);
+draw_text(168, 112, "STATISTICS");
+draw_set_color(c_white);
+draw_text(128, 128, "PLAYS:  " + string(scrGetScore(5)));
+draw_text(128, 144, "DEATHS: " + string(scrGetScore(7)));
+draw_text(128, 160, "WINS:   " + string(scrGetScore(6)));
+
+block = instance_nearest(160, 240, oPushBlock);
+if (not oButtonHighscore.pushed and block.x &gt; 160)
+{
+    draw_set_font(global.myFontSmall);
+    draw_set_color(c_yellow);
+    strLen = string_length("THIS WILL CLEAR EVERYTHING!")*8;
+    n = 320 - strLen;
+    n = ceil(n / 2);
+    draw_text(n, 216, string("THIS WILL CLEAR EVERYTHING!"));
+}}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

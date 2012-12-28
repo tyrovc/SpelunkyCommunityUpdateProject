@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (mouse_check_button(mb_left) and focus)
+{
+    x = mouse_x-4;
+    if (x &gt; 144+8) x = 144+8;
+    if (x &lt; 8+8) x = 8+8;
+    y = 208;
+    global.soundVol = floor(x / 8);
+    SS_SetSoundVol(global.sndJump, 2000 + 8000 * (global.soundVol/18));
+}
+else
+{
+    focus = false;
+    move_snap(8, 8);
+    y = 208;
+    global.soundVol = x / 8;
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

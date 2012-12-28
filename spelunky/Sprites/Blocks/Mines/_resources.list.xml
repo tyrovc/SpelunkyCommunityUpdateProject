@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sBlock" type="RESOURCE"/>
+  <resource name="sBrick" type="RESOURCE"/>
+  <resource name="sBrickDown" type="RESOURCE"/>
+  <resource name="sBrickGold" type="RESOURCE"/>
+  <resource name="sBrickGoldBig" type="RESOURCE"/>
+  <resource name="sBrick2" type="RESOURCE"/>
+  <resource name="sCaveUp" type="RESOURCE"/>
+  <resource name="sCaveSmooth" type="RESOURCE"/>
+  <resource name="sCaveUp2" type="RESOURCE"/>
+  <resource name="sCaveTop" type="RESOURCE"/>
+  <resource name="sCaveTop2" type="RESOURCE"/>
+  <resource name="sCaveBottom" type="RESOURCE"/>
+  <resource name="sCaveBottomL" type="RESOURCE"/>
+  <resource name="sCaveBottomR" type="RESOURCE"/>
+  <resource name="sCaveLeft" type="RESOURCE"/>
+  <resource name="sCaveRight" type="RESOURCE"/>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sFlyRight" type="RESOURCE"/>
+  <resource name="sFlyLeft" type="RESOURCE"/>
+  <resource name="sTombLordLeft" type="RESOURCE"/>
+  <resource name="sTombLordDisp" type="RESOURCE"/>
+  <resource name="sTombLordRight" type="RESOURCE"/>
+  <resource name="sTombLordAttackR" type="RESOURCE"/>
+  <resource name="sTombLordAttackL" type="RESOURCE"/>
+  <resource name="sTombLordTurnL" type="RESOURCE"/>
+  <resource name="sTombLordTurnR" type="RESOURCE"/>
+  <resource name="sTombLordWalkR" type="RESOURCE"/>
+  <resource name="sTombLordWalkL" type="RESOURCE"/>
+</resources>

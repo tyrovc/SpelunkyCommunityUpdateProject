@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="5">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">view_hborder[0] = 128;
+view_vborder[0] = 64;
+view_xview[0] = 0;
+view_object[0] = oPlayer1;
+oPlayer1.active = true;
+status = 0;
+counter = 100;
+playMusic(global.musBoss, true);
+//playSound(global.sndBoss);</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

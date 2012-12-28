@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="604" library="1">
+      <!--action name: Inherited-->
+      <kind>NORMAL</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>false</canApplyTo>
+      <actionType>FUNCTION</actionType>
+      <functionName>action_inherited</functionName>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments/>
+    </action>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">type = "Giant Spider";
+makeActive();
+setCollisionBounds(2, 16, 30, 32);
+xVel = 0;
+yVel = 0;
+yDelta = -0.4;
+myGrav = 0.3;
+myGravNorm = 0.3;
+image_speed = 0.8;
+
+// stats
+hp = 1;
+invincible = 0;
+whipped = 10;
+squirtTimer = rand(100,1000);
+
+// status
+IDLE = 0;
+BOUNCE = 1;
+RECOVER = 2;
+CRAWL = 3;
+DROWNED = 4;
+SQUIRT = 5;
+
+status = 0;
+bounceCounter = 0;
+
+shakeCounter = 0;
+shakeToggle = 1
+
+playSound(global.sndGiantSpider);</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="OTHER" id="7">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (sprite_index == sPExit or sprite_index == sDamselExit or sprite_index == sTunnelExit)
+{
+    instance_destroy();
+}
+/*
+if (false and sprite_index == sPExit)
+{
+    global.gameStart = true;
+    if (global.levelType == 2) room_goto(rLevel2);
+    else if (global.currLevel == 2) room_goto(rOlmec);
+    else room_goto(rLevel);
+}
+*/</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

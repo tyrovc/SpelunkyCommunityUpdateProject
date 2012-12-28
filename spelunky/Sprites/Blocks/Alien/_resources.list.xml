@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sBarrier" type="RESOURCE"/>
+  <resource name="sBarrierEmitter" type="RESOURCE"/>
+  <resource name="sAlienTop" type="RESOURCE"/>
+  <resource name="sAlienFront" type="RESOURCE"/>
+  <resource name="sAlienFront2" type="RESOURCE"/>
+  <resource name="sAlienFront3" type="RESOURCE"/>
+  <resource name="sAlienFloor" type="RESOURCE"/>
+</resources>

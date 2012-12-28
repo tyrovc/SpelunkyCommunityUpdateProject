@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">y += yVel;
+
+if (collision_point(x, y, oSolid, 0, 0) or not collision_rectangle(x-1, y-8, x+1, y+8, oRope, 0, 0))
+{
+    instance_destroy();
+}
+
+if (collision_point(x, y, oRope, 0, 0))
+{
+    rope = instance_nearest(x, y, oRope);
+    with rope
+    {
+        burnTimer = 1;
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

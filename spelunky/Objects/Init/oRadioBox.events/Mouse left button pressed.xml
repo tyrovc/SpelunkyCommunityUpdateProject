@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="MOUSE" id="4">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (not on)
+{
+    with oRadioBox
+    {
+        on = false;
+        sprite_index = sBox;
+    }
+
+    on = true;
+    sprite_index = sBoxMarked;
+    
+    if (y == 24) global.screenScale = 1;
+    else if (y == 32) global.screenScale = 2;
+    else if (y == 40) global.screenScale = 3;
+    else if (y == 48) global.screenScale = 4;
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="604" library="1">
+      <!--action name: Inherited-->
+      <kind>NORMAL</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>false</canApplyTo>
+      <actionType>FUNCTION</actionType>
+      <functionName>action_inherited</functionName>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments/>
+    </action>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">makeActive();
+setCollisionBounds(-4, -4, 4, 4);
+xVel = 0;
+yVel = -6;
+image_speed = 0.6;
+
+// stats
+type = "Alien Eject";
+hp = 1;
+invincible = 0;
+countsAsKill = true;
+
+EJECT = 0;
+DEPLOY = 1;
+FLOAT = 2;
+
+status = 0;
+
+dir = rand(0,1);
+counter = 0;
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

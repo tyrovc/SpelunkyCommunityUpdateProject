@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sMegaMouth" type="RESOURCE"/>
+  <resource name="sJawsTurnR" type="RESOURCE"/>
+  <resource name="sJawsTurnL" type="RESOURCE"/>
+  <resource name="sJawsBody1L" type="RESOURCE"/>
+  <resource name="sJawsBody1R" type="RESOURCE"/>
+  <resource name="sJawsBody2L" type="RESOURCE"/>
+  <resource name="sJawsBody2R" type="RESOURCE"/>
+  <resource name="sJawsBody3L" type="RESOURCE"/>
+  <resource name="sJawsBody3R" type="RESOURCE"/>
+  <resource name="sJawsLeft" type="RESOURCE"/>
+  <resource name="sJawsRight" type="RESOURCE"/>
+</resources>

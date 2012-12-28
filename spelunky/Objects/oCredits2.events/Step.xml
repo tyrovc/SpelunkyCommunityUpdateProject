@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (keyboard_check_pressed(vk_enter) or
+    keyboard_check_pressed(vk_escape) or
+    checkAttack())
+{
+    if (instance_exists(oCamel))
+    {
+        if (fadeIn)
+        {
+            fadeLevel = 0;
+        }
+        else
+        {
+            if (gamepad.attackPressed) gamepad.attackPressed = false;
+            if (gamepad.startPressed) gamepad.startPressed = false;
+            fadeOut = true;
+        }
+    }
+}
+
+if (instance_exists(oCamel))
+{
+    if (oCamel.x &lt;= 160 and not scrollStart)
+    {
+        with oDesertScroll
+        {
+            scroll = true;
+        }
+        alarm[1] = 1;
+        alarm[2] = 20;
+        scrollStart = true;
+        scrolling = true;
+    }
+}
+
+if (fadeIn)
+{
+    if (fadeLevel &gt; 0) fadeLevel -= 0.1;
+    else
+    {
+        fadeIn = false;
+        alarm[0] = 20;
+    }
+}
+else if (fadeOut)
+{
+    if (fadeLevel &lt; 1) fadeLevel += 0.1;
+    else
+    {
+        stopAllMusic();
+        scrUpdateHighscores(1);
+        scrClearGlobals();
+        global.drawHUD = false;
+        global.gameStart = false;
+        room_goto(rHighscores);
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

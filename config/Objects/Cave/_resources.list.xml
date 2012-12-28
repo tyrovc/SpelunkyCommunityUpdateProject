@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="oConfigLogo" type="RESOURCE"/>
+  <resource name="oCaveBG" type="RESOURCE"/>
+  <resource name="oCaveTop" type="RESOURCE"/>
+  <resource name="oCaveBottom" type="RESOURCE"/>
+  <resource name="oDoor" type="RESOURCE"/>
+  <resource name="oAltar" type="RESOURCE"/>
+  <resource name="oGoldIdol" type="RESOURCE"/>
+  <resource name="oPlayer" type="RESOURCE"/>
+  <resource name="oCaveFringe" type="RESOURCE"/>
+</resources>

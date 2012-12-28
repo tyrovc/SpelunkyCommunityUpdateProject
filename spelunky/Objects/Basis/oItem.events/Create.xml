@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="604" library="1">
+      <!--action name: Inherited-->
+      <kind>NORMAL</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>false</canApplyTo>
+      <actionType>FUNCTION</actionType>
+      <functionName>action_inherited</functionName>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments/>
+    </action>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">active = true;
+type = "None";
+shopDesc = "";
+new = true; // set to false once player has picked up, currently just used for bow
+held = false;
+LEFT = 18;
+RIGHT = 19;
+DUCKING = 12;
+myGrav = 0.6;
+armed = false;
+trigger = false; // for idols
+safe = false;
+heavy = false;
+value = 0;
+colBot = false;
+canPickUp = true;
+
+bounceFactor = 0.5;
+frictionFactor = 0.3;
+bloodless = false;
+breakPieces = true;
+
+cost = 0;
+forSale = false;
+stolen = false;
+inDiceHouse = false; // for dice house
+cimg = 0;
+
+stuck = false;
+
+// for sticky bombs
+sticky = false;
+enemyID = 0;
+stickyXDiff = 0;
+stickyYDiff = 0;
+
+if (global.hasSpectacles) depth = 51;
+else depth = 101;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

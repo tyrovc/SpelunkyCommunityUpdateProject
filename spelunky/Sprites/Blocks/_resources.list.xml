@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="Background" type="GROUP"/>
+  <resource name="Altars" type="GROUP"/>
+  <resource name="Gold" type="GROUP"/>
+  <resource name="Graves" type="GROUP"/>
+  <resource name="Mines" type="GROUP"/>
+  <resource name="Lush" type="GROUP"/>
+  <resource name="Dark" type="GROUP"/>
+  <resource name="Temple" type="GROUP"/>
+  <resource name="Alien" type="GROUP"/>
+  <resource name="Ladders" type="GROUP"/>
+  <resource name="Shop" type="GROUP"/>
+  <resource name="Water" type="GROUP"/>
+  <resource name="sMetalDoor" type="RESOURCE"/>
+  <resource name="sMetalBlock" type="RESOURCE"/>
+</resources>

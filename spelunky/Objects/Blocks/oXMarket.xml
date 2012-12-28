@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<object id="782">
+  <sprite>sExit</sprite>
+  <solid>false</solid>
+  <visible>true</visible>
+  <depth>9000</depth>
+  <persistent>false</persistent>
+  <parent>oExit</parent>
+  <mask/>
+</object>

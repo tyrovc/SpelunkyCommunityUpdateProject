@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="scrSpelunkyPortableReadMe" type="RESOURCE"/>
+  <resource name="scrGetScore" type="RESOURCE"/>
+  <resource name="scrImportHighscores" type="RESOURCE"/>
+  <resource name="scrXORScores" type="RESOURCE"/>
+  <resource name="scrUpdateHighscores" type="RESOURCE"/>
+  <resource name="scrResetHighscores" type="RESOURCE"/>
+</resources>

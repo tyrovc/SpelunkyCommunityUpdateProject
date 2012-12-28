@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DESTROY" id="0">
+  <actions>
+    <action id="604" library="1">
+      <!--action name: Inherited-->
+      <kind>NORMAL</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>false</canApplyTo>
+      <actionType>FUNCTION</actionType>
+      <functionName>action_inherited</functionName>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments/>
+    </action>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (breakPieces)
+{
+    playSound(global.sndBreak);
+    instance_create(x, y, oSmokePuff)
+    for (i = 0; i &lt; 3; i += 1)
+    {
+        piece = instance_create(x-2, y-2, oRubbleSmall);
+        if (colLeft) piece.xVel = rand(1,3);
+        else if (colRight) piece.xVel = -rand(1,3);
+        else piece.xVel = rand(1,3)-rand(1,3);
+        if (colTop) piece.yVel = rand(0,3);
+        else piece.yVel = -rand(0,3);
+    }
+    
+    if (rand(1,3) == 1) instance_create(x, y, oGoldChunk);
+    else if (rand(1,6) == 1) instance_create(x, y, oGoldNugget);
+    else if (rand(1,12) == 1) instance_create(x, y, oEmeraldBig);
+    else if (rand(1,12) == 1) instance_create(x, y, oSapphireBig);
+    else if (rand(1,12) == 1) instance_create(x, y, oRubyBig);
+    else if (rand(1,6) == 1) instance_create(x-8, y-8, oSpider);
+    else if (rand(1,12) == 1)
+    {
+        if (colLeft) instance_create(x, y-8, oSnake);
+        else if (colRight) instance_create(x-16, y-8, oSnake);
+        else instance_create(x-8, y-8, oSnake);
+    }
+    
+    if (held)
+    {
+        oPlayer1.holdItem = 0;
+        oPlayer1.pickupItem = "";
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

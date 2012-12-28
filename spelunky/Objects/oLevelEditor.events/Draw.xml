@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">draw_set_font(global.myFontSmall);
+draw_set_color(c_white);
+
+if (status == GET_FILE_NAME)
+{
+    draw_text(view_xview[0]+9, view_yview[0]+116, "EDIT LEVEL: " + levelName);
+}
+else if (status == EDIT_DOOR)
+{
+    draw_text(view_xview[0]+9, view_yview[0]+100, "LABEL:");
+    draw_text(view_xview[0]+9, view_yview[0]+116, textEdit);
+}
+else if (status == EDIT_MSG)
+{
+    draw_text(view_xview[0]+9, view_yview[0]+100, "MESSAGE:");
+    draw_text(view_xview[0]+9, view_yview[0]+116, textEdit);
+}
+else if (status == INFO_NAME)
+{
+    draw_text(view_xview[0]+9, view_yview[0]+116, "LEVEL NAME: " + levelName);
+}
+else if (status == INFO_AUTHOR)
+{
+    draw_text(view_xview[0]+9, view_yview[0]+116, "AUTHOR: " + author);
+}
+else if (status == INFO_MUSIC)
+{
+    draw_text(view_xview[0]+9, view_yview[0]+116, "MUSIC: " + music);
+}
+else if (status == INFO_LIFE)
+{
+    draw_text(view_xview[0]+9, view_yview[0]+116, "START LIFE: " + lifeStart);
+}
+else if (status == INFO_BOMBS)
+{
+    draw_text(view_xview[0]+9, view_yview[0]+116, "START BOMBS: " + bombStart);
+}
+else if (status == INFO_ROPE)
+{
+    draw_text(view_xview[0]+9, view_yview[0]+116, "START ROPE: " + ropeStart);
+}
+else if (status == INFO_NEXT)
+{
+    draw_text(view_xview[0]+9, view_yview[0]+116, "NEXT LEVEL: " + nextLevel);
+}
+else if (status == EXIT or status == NEW)
+{
+    strLen = string_length("SAVE LEVEL? (Y/N)")*8;
+    n = 320 - strLen;
+    n = ceil(n / 2);
+    draw_text(view_xview[0]+n, view_yview[0]+116, "SAVE LEVEL? (Y/N)");
+    
+    m = 16;
+    draw_set_color(c_yellow);
+    if not (instance_exists(oEntrance))
+    {
+        strLen = string_length("WARNING: NO ENTRANCE!")*8;
+        n = 320 - strLen;
+        n = ceil(n / 2);
+        draw_text(view_xview[0]+n, view_yview[0]+116+m, "WARNING: NO ENTRANCE!");
+        m += 8;
+    }
+    
+    if not (instance_exists(oExit))
+    {
+        strLen = string_length("WARNING: NO EXIT!")*8;
+        n = 320 - strLen;
+        n = ceil(n / 2);
+        draw_text(view_xview[0]+n, view_yview[0]+116+m, "WARNING: NO EXIT!");
+    }
+}
+else
+{
+    //draw_text(view_xview[0], view_yview[0], string(mouse_x) + ", " + string(mouse_y));
+    if (view_yview[0] == 0)
+    {
+        draw_text(view_xview[0]+40, view_yview[0]+view_hview[0]-32, levelName + " BY " + author);
+        draw_text(view_xview[0]+40, view_yview[0]+view_hview[0]-24, string(oCursObj.x) + ", " + string(oCursObj.y));
+    }
+    else
+    {
+        draw_text(view_xview[0]+40, view_yview[0]+16, levelName + " BY " + author);
+        draw_text(view_xview[0]+40, view_yview[0]+24, string(oCursObj.x) + ", " + string(oCursObj.y));
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

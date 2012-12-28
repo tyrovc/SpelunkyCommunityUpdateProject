@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="playMusic" type="RESOURCE"/>
+  <resource name="playSound" type="RESOURCE"/>
+  <resource name="startMusic" type="RESOURCE"/>
+  <resource name="stopAllMusic" type="RESOURCE"/>
+  <resource name="scrMusicFade" type="RESOURCE"/>
+  <resource name="supersound" type="GROUP"/>
+</resources>

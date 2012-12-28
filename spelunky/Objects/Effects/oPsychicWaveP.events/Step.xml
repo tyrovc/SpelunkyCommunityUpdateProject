@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (counter &gt; 0)
+{
+    counter -= 1;
+    x += xVel;
+    if (xVel &gt; 0) dir = 0;
+    else dir = 180;
+}
+else
+{
+    if (instance_exists(oEnemy))
+    {
+        obj = instance_nearest(x, y, oEnemy);
+        dir = point_direction(x, y, obj.x+8, obj.y+8);
+    }
+    x += 2 * cos(degtorad(dir));
+    y += -2 * sin(degtorad(dir));
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

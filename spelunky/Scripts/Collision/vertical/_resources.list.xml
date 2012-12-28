@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="isCollisionBottom" type="RESOURCE"/>
+  <resource name="isCollisionTop" type="RESOURCE"/>
+  <resource name="isCollisionCharacterBottom" type="RESOURCE"/>
+  <resource name="isCollisionCharacterTop" type="RESOURCE"/>
+  <resource name="isCollisionMovingSolidBottom" type="RESOURCE"/>
+  <resource name="isCollisionPlatformBottom" type="RESOURCE"/>
+  <resource name="isCollisionWaterTop" type="RESOURCE"/>
+  <resource name="getIdCollisionCharacterTop" type="RESOURCE"/>
+</resources>

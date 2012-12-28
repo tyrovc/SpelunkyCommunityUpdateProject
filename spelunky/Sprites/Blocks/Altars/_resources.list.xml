@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sSacAltarRight" type="RESOURCE"/>
+  <resource name="sSacAltarLeft" type="RESOURCE"/>
+  <resource name="sSacAltar" type="RESOURCE"/>
+  <resource name="sAltarRight" type="RESOURCE"/>
+  <resource name="sAltarLeft" type="RESOURCE"/>
+  <resource name="sSkullBlock" type="RESOURCE"/>
+</resources>

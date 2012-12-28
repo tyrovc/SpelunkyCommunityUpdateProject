@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="oSolid">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">with other
+{
+    if (not invincible)
+    {
+        if (collision_point(x, y, oGold, 0, 0))
+        {
+            gold = instance_place(x, y, oGold);
+            with gold { instance_destroy(); }
+        }
+        if (collision_point(x, y, oGoldBig, 0, 0))
+        {
+            gold = instance_place(x, y, oGoldBig);
+            with gold { instance_destroy(); }
+        }
+        instance_destroy();
+    }
+    
+    tile = tile_layer_find(3, x, y-16);
+    if (tile) tile_delete(tile);
+}
+
+instance_create(x, y, oLaserExplode);
+// global.checkWater = true;
+instance_destroy();</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

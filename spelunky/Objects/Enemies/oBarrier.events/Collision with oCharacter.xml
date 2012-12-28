@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="oCharacter">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (other.invincible == 0)
+{
+    other.blink = 30
+    other.invincible = 30
+    other.yVel = -2
+    if (other.x &lt; x)
+        other.xVel = -6
+    else
+        other.xVel = 6
+    
+    if (global.plife &gt; 0) global.plife -= 1;
+    playSound(global.sndHurt);
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

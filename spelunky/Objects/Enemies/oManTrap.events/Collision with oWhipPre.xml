@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="oWhipPre">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (status != STUNNED)
+{
+    if (other.type == "Machete")
+    {
+        hp -= other.damage*2;
+    }
+    else
+    {
+        hp -= other.damage;
+    }
+    countsAsKill = true;
+    status = STUNNED;
+    counter = stunTime;
+    yVel = -3;
+    if (other.x &lt; (x+8)) xVel = 2;
+    else xVel = -2;
+    image_speed = 0.5;
+    instance_create(x+rand(0,16), y-8+rand(0,16), oLeaf);
+    playSound(global.sndHit);
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="rInit" type="RESOURCE"/>
+  <resource name="rKeyConfig" type="RESOURCE"/>
+  <resource name="rJoyConfig" type="RESOURCE"/>
+  <resource name="rLanguageConfig" type="RESOURCE"/>
+</resources>

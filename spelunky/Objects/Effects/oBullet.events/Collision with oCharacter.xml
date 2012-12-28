@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="oCharacter">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (other.sprite_index != sPExit and other.sprite_index != sDamselExit and other.sprite_index != sTunnelExit)
+{
+    if (global.plife &gt; 0)
+    {
+        global.plife -= 4;
+        if (global.plife &lt;= 0 and isRealLevel()) global.enemyDeaths[19] += 1;
+    }
+    
+    other.xVel = xVel;
+    other.yVel = -4;
+
+    with other
+    {
+        instance_create(x, y, oBlood);
+        stunned = true;
+        stunTimer = 20;
+    }
+
+    playSound(global.sndHurt);
+    instance_destroy();
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

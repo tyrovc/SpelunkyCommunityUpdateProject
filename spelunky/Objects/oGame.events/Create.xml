@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="605" library="1">
+      <!--action name: Comment-->
+      <kind>NORMAL</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>false</canApplyTo>
+      <actionType>NONE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">Create Game</argument>
+      </arguments>
+    </action>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">drawStatus = 0;
+moneyCount = 0;
+globalvar debug;
+debug = false;
+global.ghostExists = false;
+
+damsel = false;
+idol = false;
+altar = false;
+
+// Black Market
+genClothingShop = false;
+genBombShop = false;
+genSupplyShop = false;
+genRareShop = false;
+genWeaponShop = false;
+
+if (instance_number(oGame) &gt; 1) instance_destroy();
+
+moveableSolidGrav = 1; // how fast moveable solids should accelerate downwards
+time = 1;
+
+// sound_loop(sndMusicTest);
+
+if (global.gameStart) scrInitLevel();</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

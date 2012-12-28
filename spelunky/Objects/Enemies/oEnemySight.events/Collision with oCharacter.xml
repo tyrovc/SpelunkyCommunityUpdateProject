@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="oCharacter">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">with oCaveman
+{
+    if (distance_to_object(oPlayer1) &lt; 100 and status &lt; 98)
+    {
+        status = 2;
+        playSound(global.sndAlert);
+    }
+}
+
+with oHawkman
+{
+    if (distance_to_object(oPlayer1) &lt; 100 and status &lt; 98)
+    {
+        status = 2;
+        playSound(global.sndAlert);
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

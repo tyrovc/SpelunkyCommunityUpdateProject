@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="oRadioBox" type="RESOURCE"/>
+  <resource name="oCheckBox" type="RESOURCE"/>
+  <resource name="oCheckBox2" type="RESOURCE"/>
+  <resource name="oCheckBox3" type="RESOURCE"/>
+  <resource name="oCheckBox4" type="RESOURCE"/>
+  <resource name="oSlider1" type="RESOURCE"/>
+  <resource name="oSlider2" type="RESOURCE"/>
+  <resource name="oSliderBG" type="RESOURCE"/>
+  <resource name="oOKButton" type="RESOURCE"/>
+  <resource name="oKeyConfigButton" type="RESOURCE"/>
+  <resource name="oJoyConfigButton" type="RESOURCE"/>
+</resources>

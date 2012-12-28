@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="oCharacter">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (other.invincible == 0)
+{
+    other.blink = 30;
+    other.invincible = 30;
+    other.stunned = true;
+    other.stunTimer = 20;
+    other.burning = 100;
+    other.yVel = -4;
+    if (other.x &lt; x)
+        other.xVel = -6;
+    else
+        other.xVel = 6;
+    instance_create(other.x, other.y, oBlood);
+    
+    if (global.plife &gt; 0)
+    {
+        global.plife -= 2;
+        if (global.plife &lt;= 0 and isRealLevel()) global.enemyDeaths[21] += 1;
+    }
+    playSound(global.sndHurt);
+    playSound(global.sndFlame);
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

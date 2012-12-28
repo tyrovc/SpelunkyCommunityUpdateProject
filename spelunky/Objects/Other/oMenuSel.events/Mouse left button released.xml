@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="MOUSE" id="7">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">n = (y - 112) / 8;
+if (n+1 &lt;= (oLoadLevel.numLevels - (oLoadLevel.page-1)*10))
+{
+    oLoadLevel.levelName = string_upper(oLoadLevel.levelList[(oLoadLevel.page-1)*10+n]);
+    with oMenuSel { sprite_index = sMenuSelOff; }
+    sprite_index = sMenuSelOn;
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

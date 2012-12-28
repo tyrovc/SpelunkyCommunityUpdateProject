@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="isCollisionLeft" type="RESOURCE"/>
+  <resource name="isCollisionRight" type="RESOURCE"/>
+  <resource name="isCollisionMoveableSolidLeft" type="RESOURCE"/>
+  <resource name="isCollisionMoveableSolidRight" type="RESOURCE"/>
+  <resource name="isCollisionCharacterLeft" type="RESOURCE"/>
+  <resource name="isCollisionCharacterRight" type="RESOURCE"/>
+  <resource name="getIdCollisionLeft" type="RESOURCE"/>
+  <resource name="getIdCollisionRight" type="RESOURCE"/>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="Blocks" type="GROUP"/>
+  <resource name="Character" type="GROUP"/>
+  <resource name="Enemies" type="GROUP"/>
+  <resource name="Traps" type="GROUP"/>
+  <resource name="Items" type="GROUP"/>
+  <resource name="Effects" type="GROUP"/>
+  <resource name="Other" type="GROUP"/>
+  <resource name="Level Editor" type="GROUP"/>
+  <resource name="HUD" type="GROUP"/>
+  <resource name="Mushrooms" type="GROUP"/>
+  <resource name="sBlack" type="RESOURCE"/>
+  <resource name="sBlackFadeUp" type="RESOURCE"/>
+  <resource name="sFontOld" type="RESOURCE"/>
+  <resource name="sFontSmall" type="RESOURCE"/>
+  <resource name="sFont" type="RESOURCE"/>
+  <resource name="sLvl" type="RESOURCE"/>
+  <resource name="sRed" type="RESOURCE"/>
+  <resource name="sRoom" type="RESOURCE"/>
+  <resource name="supersound" type="GROUP"/>
+</resources>

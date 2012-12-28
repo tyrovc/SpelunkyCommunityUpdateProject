@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="8">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">scrolling = false;
+with oDesertScroll { scroll = false; }
+with oDesertScroll2 { scroll = false; }
+with oDesertTopScroll { scroll = false; }
+with oPalmTreeScroll { scroll = false; }
+with oShrubScroll { scroll = false; }
+oCamel.status = 2;
+oCaravan.status = 2;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

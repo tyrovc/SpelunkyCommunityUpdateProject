@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="scrShopkeeperAnger" type="RESOURCE"/>
+  <resource name="scrShake" type="RESOURCE"/>
+  <resource name="isRoom" type="RESOURCE"/>
+  <resource name="isLevel" type="RESOURCE"/>
+  <resource name="isRealLevel" type="RESOURCE"/>
+  <resource name="isInShop" type="RESOURCE"/>
+  <resource name="getKissValue" type="RESOURCE"/>
+</resources>

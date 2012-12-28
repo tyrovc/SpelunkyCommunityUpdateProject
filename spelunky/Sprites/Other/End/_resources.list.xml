@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sEndWall" type="RESOURCE"/>
+  <resource name="sBigChest" type="RESOURCE"/>
+  <resource name="sBigChestOpen" type="RESOURCE"/>
+  <resource name="sLavaSpray" type="RESOURCE"/>
+  <resource name="sVolcanoFlame" type="RESOURCE"/>
+  <resource name="sBigTreasure" type="RESOURCE"/>
+  <resource name="sPlayerSil" type="RESOURCE"/>
+  <resource name="sTreasureSil" type="RESOURCE"/>
+  <resource name="sEnd2BG" type="RESOURCE"/>
+  <resource name="sprite1112" type="RESOURCE"/>
+</resources>

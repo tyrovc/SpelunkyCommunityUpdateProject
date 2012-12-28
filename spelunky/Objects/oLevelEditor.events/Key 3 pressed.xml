@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="KEYPRESS" id="51">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">// Traps
+if (status == 1)
+{
+    dropSelect = 2;
+    if (global.tunnel1 == 0 and global.tunnel2 &gt; 0) dropMax = 4;
+    else if (global.tunnel1 &gt; 0 and global.tunnel2 == 0) dropMax = 5;
+    else if (global.tunnel1 == 0 and global.tunnel2 == 0) dropMax = 6;
+    else dropMax = 2;
+    dropVal = 0;
+    oCursObj.sprite_index = sSpikes;
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

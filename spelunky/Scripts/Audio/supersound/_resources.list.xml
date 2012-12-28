@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="SS_Init" type="RESOURCE"/>
+  <resource name="SS_Unload" type="RESOURCE"/>
+  <resource name="SS_LoadSound" type="RESOURCE"/>
+  <resource name="SS_PlaySound" type="RESOURCE"/>
+  <resource name="SS_LoopSound" type="RESOURCE"/>
+  <resource name="SS_StopSound" type="RESOURCE"/>
+  <resource name="SS_SetSoundFreq" type="RESOURCE"/>
+  <resource name="SS_SetSoundPan" type="RESOURCE"/>
+  <resource name="SS_SetSoundVol" type="RESOURCE"/>
+  <resource name="SS_FreeSound" type="RESOURCE"/>
+  <resource name="Advanced" type="GROUP"/>
+</resources>

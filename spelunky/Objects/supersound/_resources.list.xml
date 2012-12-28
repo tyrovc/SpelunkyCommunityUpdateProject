@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="core" type="RESOURCE"/>
+  <resource name="mascara" type="RESOURCE"/>
+  <resource name="mascara2" type="RESOURCE"/>
+</resources>

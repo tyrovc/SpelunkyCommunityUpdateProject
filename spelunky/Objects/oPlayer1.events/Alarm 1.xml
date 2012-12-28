@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="1">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (isRoom("rTutorial"))
+{
+    // do nothing
+}
+else if (global.snakePit)
+{
+    global.message = "I HEAR SNAKES... I HATE SNAKES!";
+    global.message2 = "";
+    global.messageTimer = 200;
+}
+else if (global.cemetary and global.darkLevel)
+{
+    global.message = "THE DEAD ARE RESTLESS!";
+    global.message2 = "";
+    global.messageTimer = 200;
+    if (global.lake) alarm[4] = 210;
+}
+else if (global.lake)
+{
+    global.message = "I CAN HEAR RUSHING WATER...";
+    global.message2 = "";
+    global.messageTimer = 200;
+}
+else if (global.yetiLair)
+{
+    global.message = "IT SMELLS LIKE WET FUR IN HERE!";
+    global.message2 = "";
+    global.messageTimer = 200;
+}
+else if (global.alienCraft)
+{
+    global.message = "THERE'S A PSYCHIC PRESENCE HERE!";
+    global.message2 = "";
+    global.messageTimer = 200;
+}
+else if (global.cityOfGold)
+{
+    global.message = "IT'S THE LEGENDARY CITY OF GOLD!";
+    global.message2 = "";
+    global.messageTimer = 200;
+    if (global.sacrificePit) alarm[4] = 210;
+}
+else if (global.sacrificePit)
+{
+    global.message = "I CAN HEAR PRAYERS TO KALI!";
+    global.message2 = "";
+    global.messageTimer = 200;
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

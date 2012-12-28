@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">with oScreen { canPause = true; }
+
+global.currLevel = 1;
+
+shakeToggle = false;
+global.darkLevel = false;
+global.snakePit = false;
+global.messageTimer = 0;
+global.mini1 = 0;
+global.mini2 = 0;
+global.mini3 = 0;
+global.hasJordans = false;
+global.arrows = 0;
+
+sunGold = 200000;
+moonGold = 600000;
+starsGold = 120;
+
+tMoney = scrGetScore(1);
+tTime = scrGetScore(2);
+tKills = scrGetScore(3);
+tSaves = scrGetScore(4);
+
+// debug
+/*
+tMoney = 200000;
+tTime = 1;
+tKills = 200;
+tSaves = 8;
+*/
+
+if (tMoney &gt;= 50000)
+{
+    trophy = instance_create(32, 32, oTrophy);
+    if (tMoney &gt;= 200000)
+    {
+        trophy.sprite_index = sGoldTrophy;
+        instance_create(32, 48, oXSun);
+    }
+    else if (tMoney &gt;= 100000)
+    {
+        trophy.sprite_index = sSilverTrophy;
+    }
+    else
+    {
+        trophy.sprite_index = sBronzeTrophy;
+    }
+}
+
+if (tTime &gt; 0 and tTime &lt; 960)
+{
+    trophy = instance_create(64, 64, oTrophy);
+    if (tTime &lt;= 960)
+    {
+        trophy.sprite_index = sBronzeTrophy;
+    }
+    if (tTime &lt;= 720)
+    {
+        trophy.sprite_index = sSilverTrophy;
+    }
+    if (tTime &lt;= 600)
+    {
+        trophy.sprite_index = sGoldTrophy;
+        instance_create(64, 80, oXMoon);
+    }
+}
+
+if (tKills &gt;= 80)
+{
+    trophy = instance_create(32, 96, oTrophy);
+    if (tKills &gt;= 120)
+    {
+        trophy.sprite_index = sGoldTrophy;
+        instance_create(32, 112, oXStars);
+    }
+    else if (tKills &gt;= 100)
+    {
+        trophy.sprite_index = sSilverTrophy;
+    }
+    else
+    {
+        trophy.sprite_index = sBronzeTrophy;
+    }
+}
+
+if (tSaves &gt;= 4)
+{
+    trophy = instance_create(64, 128, oTrophy);
+    if (tSaves &gt;= 8)
+    {
+        trophy.sprite_index = sGoldTrophy;
+        instance_create(64, 144, oXChange);
+    }
+    else if (tSaves &gt;= 6)
+    {
+        trophy.sprite_index = sSilverTrophy;
+    }
+    else
+    {
+        trophy.sprite_index = sBronzeTrophy;
+    }
+}
+
+if (global.scoresStart == 1)
+{
+    oPlayer1.x = 32+8;
+    oPlayer1.y = 48+8;
+}
+else if (global.scoresStart == 2)
+{
+    oPlayer1.x = 64+8;
+    oPlayer1.y = 80+8;
+}
+else if (global.scoresStart == 3)
+{
+    oPlayer1.x = 32+8;
+    oPlayer1.y = 112+8;
+}
+
+if (global.newMoney) instance_create(272, 48, oNew);
+if (global.newKills) instance_create(272, 64, oNew);
+if (global.newSaves) instance_create(272, 80, oNew);
+if (global.newTime) instance_create(272, 96, oNew);
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

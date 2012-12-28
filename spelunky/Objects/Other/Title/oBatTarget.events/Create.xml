@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">bloodless = false;
+UP = 0;
+DOWN = 1;
+dir = 1;
+if (x == 208) difficulty = 2;
+else if (x == 256) difficulty = 4;
+else difficulty = 1;
+xMid = x;
+xDiff = 0;
+if (oMoonRoom.timer &lt;= 20)
+{
+    difficulty += 2;
+    sprite_index = sUFO;
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

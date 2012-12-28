@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="approximatelyZero" type="RESOURCE"/>
+  <resource name="calculateCollisionBounds" type="RESOURCE"/>
+  <resource name="isCollisionRectangle" type="RESOURCE"/>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (instance_exists(oFlare) and needDark)
+{
+    dist = 160 - oFlare.y;
+    if (dist &lt; 0) dist = 0;
+    darkness = dist / 160;
+    if (darkness == 0) needDark = false;
+}
+
+draw_set_alpha(1);
+
+/*
+draw_set_font(global.myFontSmall);
+draw_set_color(c_yellow);
+draw_text(320+96, 96, "V1.1 (C)2009");
+*/
+
+if (instance_exists(oPlayer1))
+{
+    player = instance_nearest(0, 0, oPlayer1);
+    if (player.x &lt; 256 and view_xview[0] &lt;= 1)
+    {
+        draw_set_font(global.myFontSmall);
+        draw_set_color(c_white);
+        strLen = string_length("WELCOME TO THE SHORTCUT HOUSE!")*8;
+        n = 320 - strLen;
+        n = ceil(n / 2);
+        draw_text(n, 224, string("WELCOME TO THE SHORTCUT HOUSE!"));
+    }
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

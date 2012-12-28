@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (x &gt; view_xview[0]-16 and x &lt; view_xview[0] + view_wview[0]+16 and
+        y &gt; view_yview[0]-16 and y &lt; view_yview[0] + view_hview[0]+16)
+{
+if (not collision_point(x, y+16, oSolid, 0, 0))
+{
+    instance_destroy();
+}
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

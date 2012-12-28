@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="oSolid">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (isLevel("rTutorial") or (x &gt; view_xview[0]-16 and x &lt; view_xview[0] + view_wview[0]+16 and
+     y &gt; view_yview[0]-16 and y &lt; view_yview[0] + view_hview[0]+16))
+{
+    with other
+    {
+        repeat (2)
+        {
+            tile = tile_layer_find(3, x+1, y-1);
+            if (tile) tile_delete(tile);
+        }
+        tile = tile_layer_find(3, x+1, y+16);
+        if (tile) tile_delete(tile);
+    
+        if (not invincible) instance_destroy();
+    }
+
+    with oTreasure
+    {
+        state = 1;
+    }
+
+    with oSpikes
+    {
+        if (not collision_point(x, y+16, oSolid, 0, 0))
+        {
+            instance_destroy();
+        }
+    }
+
+//global.checkWater = true;
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

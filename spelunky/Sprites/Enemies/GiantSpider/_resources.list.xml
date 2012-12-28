@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sWeb" type="RESOURCE"/>
+  <resource name="sWebBall" type="RESOURCE"/>
+  <resource name="sWebCreate" type="RESOURCE"/>
+  <resource name="sGiantSpiderHang" type="RESOURCE"/>
+  <resource name="sGiantSpiderFlip" type="RESOURCE"/>
+  <resource name="sGiantSpider" type="RESOURCE"/>
+  <resource name="sGiantSpiderCrawl" type="RESOURCE"/>
+  <resource name="sGiantSpiderJump" type="RESOURCE"/>
+  <resource name="sGiantSpiderSquirt" type="RESOURCE"/>
+  <resource name="sGiantSpiderDisp" type="RESOURCE"/>
+</resources>

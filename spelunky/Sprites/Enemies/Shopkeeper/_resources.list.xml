@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sShopThrowL" type="RESOURCE"/>
+  <resource name="sShopLeft" type="RESOURCE"/>
+  <resource name="sShopLeftIco" type="RESOURCE"/>
+  <resource name="sShopRunLeft" type="RESOURCE"/>
+  <resource name="sShopDieLL" type="RESOURCE"/>
+  <resource name="sShopDieLR" type="RESOURCE"/>
+  <resource name="sShopBounceL" type="RESOURCE"/>
+  <resource name="sShopFallL" type="RESOURCE"/>
+  <resource name="sShopDieL" type="RESOURCE"/>
+  <resource name="sShopStunL" type="RESOURCE"/>
+  <resource name="sShopHeldL" type="RESOURCE"/>
+  <resource name="sShopDHeldL" type="RESOURCE"/>
+</resources>

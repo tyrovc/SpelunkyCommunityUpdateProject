@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (dir == UP)
+{
+    y -= difficulty;
+    if (y &lt;= 64)
+    {
+        dir = DOWN;
+    }
+}
+else if (dir == DOWN)
+{
+    y += difficulty;
+    if (y &gt;= 160)
+    {
+        dir = UP;
+    }
+}
+    
+if (oMoonRoom.timer &lt;= 20 and y &gt; 64)
+{
+    x = xMid - abs(sin(xDiff)*32);
+    xDiff += 0.01;
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

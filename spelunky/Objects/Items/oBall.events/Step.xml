@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="604" library="1">
+      <!--action name: Inherited-->
+      <kind>NORMAL</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>false</canApplyTo>
+      <actionType>FUNCTION</actionType>
+      <functionName>action_inherited</functionName>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments/>
+    </action>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (distance_to_object(oPlayer1) &gt;= 24)
+{
+    if (abs(oPlayer1.x - x) &gt;= 24 or not colBot)
+    {
+        if (abs(oPlayer1.x-x) &lt; 1)
+        {
+            x = oPlayer1.x;
+            xVel = 0;
+        }
+        
+        if (oPlayer1.x &gt; x)
+        {
+            if (oPlayer1.xVel &gt; 0 and y &gt;= oPlayer1.y) xVel = oPlayer1.xVel;
+            else if (xVel &lt; 0) xVel *= -0.5;
+            else if (xVel == 0) xVel = 2;
+        }
+        else if (oPlayer1.x &lt; x)
+        {
+            if (oPlayer1.xVel &lt; 0 and y &gt;= oPlayer1.y) xVel = oPlayer1.xVel;
+            else if (xVel &gt; 0) xVel *= -0.5;
+            else if (xVel == 0) xVel = -2;
+        }
+    }
+    else
+    {
+        xVel *= 0.5;
+        if (abs(xVel) &lt; 0.5) xVel = 0;
+    }
+    
+    if (abs(oPlayer1.y - y) &gt;= 24)
+    {
+        if (oPlayer1.y &lt; y) yVel = 0;
+    }
+}
+else if (colBot)
+{
+    xVel = 0;
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

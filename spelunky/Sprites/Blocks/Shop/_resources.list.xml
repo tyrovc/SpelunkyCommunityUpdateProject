@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sSignKissing" type="RESOURCE"/>
+  <resource name="sSignCraps" type="RESOURCE"/>
+  <resource name="sSignClothing" type="RESOURCE"/>
+  <resource name="sSignWeapon" type="RESOURCE"/>
+  <resource name="sSignBomb" type="RESOURCE"/>
+  <resource name="sSignRare" type="RESOURCE"/>
+  <resource name="sSignGeneral" type="RESOURCE"/>
+  <resource name="sSign" type="RESOURCE"/>
+  <resource name="sLampRed" type="RESOURCE"/>
+  <resource name="sLamp" type="RESOURCE"/>
+</resources>

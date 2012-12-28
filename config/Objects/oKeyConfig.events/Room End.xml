@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="OTHER" id="5">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">file = file_text_open_write("keys.cfg");
+file_text_write_string(file, string(global.keyUpVal));
+file_text_writeln(file);
+file_text_write_string(file, string(global.keyDownVal));
+file_text_writeln(file);
+file_text_write_string(file, string(global.keyLeftVal));
+file_text_writeln(file);
+file_text_write_string(file, string(global.keyRightVal));
+file_text_writeln(file);
+file_text_write_string(file, string(global.keyJumpVal));
+file_text_writeln(file);
+file_text_write_string(file, string(global.keyAttackVal));
+file_text_writeln(file);
+file_text_write_string(file, string(global.keyItemVal));
+file_text_writeln(file);
+file_text_write_string(file, string(global.keyRunVal));
+file_text_writeln(file);
+file_text_write_string(file, string(global.keyBombVal));
+file_text_writeln(file);
+file_text_write_string(file, string(global.keyRopeVal));
+file_text_writeln(file);
+file_text_write_string(file, string(global.keyFlareVal));
+file_text_writeln(file);
+file_text_write_string(file, string(global.keyPayVal));
+file_text_close(file);</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

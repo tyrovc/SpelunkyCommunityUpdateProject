@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="MOUSE" id="7">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (sprite_index == sEditButtonPressed)
+{
+    oLevelEditor.status = 2;
+    with oNewButton { instance_destroy(); }
+    with oTestButton { instance_destroy(); }
+    instance_destroy();
+}
+sprite_index = sEditButton;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

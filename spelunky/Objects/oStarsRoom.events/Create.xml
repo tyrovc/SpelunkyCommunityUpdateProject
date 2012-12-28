@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">global.plife = 8;
+highscore = false;
+kills = 0;
+drawStatus = 0;
+alarm[0] = 100;
+alarm[1] = 30;
+alarm[10] = 100;
+alarm[11] = 110;
+
+// To prevent the Tunnel Man from tearing up the whole level.
+with oBrick
+{
+    if (x &lt;= 16 or x &gt;= 288 or y &lt;= 16 or y &gt;= 208)
+    {
+        invincible = true;
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

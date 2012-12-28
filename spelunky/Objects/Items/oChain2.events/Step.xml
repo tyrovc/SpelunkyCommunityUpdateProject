@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (instance_exists(oPDummy))
+{
+    x = oBall2.x + ((oPDummy.x-oBall2.x)/4)*linkVal;
+    y = oBall2.y + ((oPDummy.y-oBall2.y)/4)*linkVal;
+}
+else 
+{
+    x = oBall2.x + ((280-oBall2.x)/4)*linkVal;
+    y = oBall2.y + ((184-oBall2.y)/4)*linkVal;
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

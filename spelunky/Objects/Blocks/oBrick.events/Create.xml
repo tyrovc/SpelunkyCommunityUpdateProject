@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="604" library="1">
+      <!--action name: Inherited-->
+      <kind>NORMAL</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>false</canApplyTo>
+      <actionType>FUNCTION</actionType>
+      <functionName>action_inherited</functionName>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments/>
+    </action>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">n = rand(1,10);
+
+if (n == 1) sprite_index = sBrick2;
+
+n = rand(1,100);
+if (n &lt; 20) sprite_index = sBrickGold;
+else if (n &lt; 30) sprite_index = sBrickGoldBig;
+else if (isLevel() and x &gt; 1 and x &lt; room_width-16 and y &gt; 1 and y &lt; room_height-16)
+{
+    if (rand(1,100) == 1) instance_create(x+8, y+8, oSapphireBig);
+    else if (rand(1,120) == 1) instance_create(x+8, y+8, oEmeraldBig);
+    else if (rand(1,140) == 1) instance_create(x+8, y+8, oRubyBig);
+    else if (rand(1,1200) == 1) scrGenerateItem(x+8, y+8, 2);
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

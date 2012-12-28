@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="oTreasure">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (trapID == 0)
+{
+    instance_destroy();
+}
+else if (abs(other.xVel) &gt; 0 or abs(other.yVel) &gt; 0)
+{
+    with trapID
+    {
+        if (fired == 0)
+        {
+            if (facing == 0)
+            {
+                arrow = instance_create(x-2, y+4, oArrow);
+                arrow.xVel = -8;
+            }
+            else
+            {
+                arrow = instance_create(x+18, y+4, oArrow);
+                arrow.xVel = 8;
+            }
+            fired += 1;
+            playSound(global.sndArrowTrap);
+        }
+    }
+    instance_destroy();
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

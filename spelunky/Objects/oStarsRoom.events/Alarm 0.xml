@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (not oPlayer1.dead)
+{
+    n = rand(0,3);
+    instance_create(32 + n*80, 0, oShopkeeper2);
+    if (kills &gt;= 40)
+    {
+        alarm[0] = 100;
+    }
+    else if (kills &gt;= 30)
+    {
+        alarm[0] = 125;
+    }
+    else if (kills &gt;= 20)
+    {
+        alarm[0] = 150;
+    }
+    else if (kills &gt;= 10)
+    {
+        alarm[0] = 175;
+    }
+    else alarm[0] = 200;
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

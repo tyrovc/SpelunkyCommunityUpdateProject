@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="scrCreateTile" type="RESOURCE"/>
+  <resource name="scrCreateTileObj" type="RESOURCE"/>
+  <resource name="scrSetCursorTile" type="RESOURCE"/>
+  <resource name="scrLoadLevel" type="RESOURCE"/>
+  <resource name="scrTestLevel" type="RESOURCE"/>
+</resources>

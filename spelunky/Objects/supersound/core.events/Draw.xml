@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">
+pos = SS_GetSoundPosition(handle);
+len = SS_GetSoundLength(handle);
+
+draw_text(20,10,"Sound position/length: "+
+string(floor(pos/bps))+
+"/"+
+string(floor(len/bps))+
+"  =  "+
+string(pos/len*100)+
+"%");
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sHintPoint" type="RESOURCE"/>
+  <resource name="sHeart" type="RESOURCE"/>
+  <resource name="sShopkeeperIcon" type="RESOURCE"/>
+  <resource name="sDamselIcon" type="RESOURCE"/>
+  <resource name="sTimerIcon" type="RESOURCE"/>
+  <resource name="sHoopsIcon" type="RESOURCE"/>
+  <resource name="sBombIcon" type="RESOURCE"/>
+  <resource name="sStickyBombIcon" type="RESOURCE"/>
+  <resource name="sRopeIcon" type="RESOURCE"/>
+  <resource name="sParachuteIcon" type="RESOURCE"/>
+  <resource name="sArrowIcon" type="RESOURCE"/>
+  <resource name="sHoldItemIcon" type="RESOURCE"/>
+  <resource name="sSpringShoesIcon" type="RESOURCE"/>
+  <resource name="sSpikeShoesIcon" type="RESOURCE"/>
+  <resource name="sGlovesIcon" type="RESOURCE"/>
+  <resource name="sMittIcon" type="RESOURCE"/>
+  <resource name="sJetpackIcon" type="RESOURCE"/>
+  <resource name="sKapalaIcon" type="RESOURCE"/>
+  <resource name="sDeathMask" type="RESOURCE"/>
+  <resource name="sCapeIcon" type="RESOURCE"/>
+  <resource name="sCompassIcon" type="RESOURCE"/>
+  <resource name="sSpectaclesIcon" type="RESOURCE"/>
+  <resource name="sDollarSign" type="RESOURCE"/>
+</resources>

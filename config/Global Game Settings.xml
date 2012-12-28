@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<settings>
+  <graphics>
+    <scalingPercent>100</scalingPercent>
+    <displayCursor>true</displayCursor>
+    <useVsync>false</useVsync>
+    <interpolateColors>false</interpolateColors>
+    <colorOutsideRoom>000000</colorOutsideRoom>
+  </graphics>
+  <windowing>
+    <startFullscreen>false</startFullscreen>
+    <dontDrawBorder>false</dontDrawBorder>
+    <allowWindowResize>false</allowWindowResize>
+    <alwaysOnTop>false</alwaysOnTop>
+    <dontShowButtons>false</dontShowButtons>
+    <switchVideoMode>false</switchVideoMode>
+  </windowing>
+  <splashImage>
+    <showCustom>true</showCustom>
+    <partiallyTransparent>true</partiallyTransparent>
+    <alphaTransparency>255</alphaTransparency>
+  </splashImage>
+  <progressBar>
+    <mode>LOADBAR_NONE</mode>
+    <scaleImage>false</scaleImage>
+  </progressBar>
+  <keys>
+    <letF1ShowGameInfo>false</letF1ShowGameInfo>
+    <letF4SwitchFullscreen>true</letF4SwitchFullscreen>
+    <letF5SaveF6Load>false</letF5SaveF6Load>
+    <letF9Screenshot>true</letF9Screenshot>
+    <letEscEndGame>false</letEscEndGame>
+    <treatCloseAsEscape>false</treatCloseAsEscape>
+  </keys>
+  <errors>
+    <displayErrors>true</displayErrors>
+    <writeToLog>false</writeToLog>
+    <abortOnError>false</abortOnError>
+    <treatUninitializedAsZero>false</treatUninitializedAsZero>
+    <checkScriptArgumentCount>false</checkScriptArgumentCount>
+  </errors>
+  <gameInfo>
+    <gameId>834524</gameId>
+    <author>Derek Yu</author>
+    <version>0.99.9</version>
+    <information/>
+    <versionMajor>0</versionMajor>
+    <versionMinor>99</versionMinor>
+    <versionRelease>9</versionRelease>
+    <versionBuild>0</versionBuild>
+    <company>Derek Yu</company>
+    <product>Spelunky</product>
+    <copyright>2008-2009</copyright>
+    <description/>
+    <directPlayGuid>f9cc77536b9e704cbb02e51374a9b006</directPlayGuid>
+  </gameInfo>
+  <system>
+    <processPriority>PRIORITY_NORMAL</processPriority>
+    <disableScreensavers>true</disableScreensavers>
+    <freezeOnLoseFocus>true</freezeOnLoseFocus>
+  </system>
+  <includes>
+    <overwriteExisting>false</overwriteExisting>
+    <removeAtGameEnd>false</removeAtGameEnd>
+    <useTempFolder>false</useTempFolder>
+  </includes>
+</settings>

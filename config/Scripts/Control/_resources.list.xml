@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="checkJoyButton" type="RESOURCE"/>
+  <resource name="checkStartPressed" type="RESOURCE"/>
+  <resource name="checkLeft" type="RESOURCE"/>
+  <resource name="checkLeftPressed" type="RESOURCE"/>
+  <resource name="checkLeftReleased" type="RESOURCE"/>
+  <resource name="checkRight" type="RESOURCE"/>
+  <resource name="checkRightPressed" type="RESOURCE"/>
+  <resource name="checkRightReleased" type="RESOURCE"/>
+  <resource name="checkUp" type="RESOURCE"/>
+  <resource name="checkUpPressed" type="RESOURCE"/>
+  <resource name="checkDown" type="RESOURCE"/>
+  <resource name="checkDownPressed" type="RESOURCE"/>
+  <resource name="checkJump" type="RESOURCE"/>
+  <resource name="checkJumpPressed" type="RESOURCE"/>
+  <resource name="checkJumpReleased" type="RESOURCE"/>
+  <resource name="checkAttack" type="RESOURCE"/>
+  <resource name="checkAttackPressed" type="RESOURCE"/>
+  <resource name="checkAttackReleased" type="RESOURCE"/>
+  <resource name="checkItemPressed" type="RESOURCE"/>
+  <resource name="checkRun" type="RESOURCE"/>
+  <resource name="checkBombPressed" type="RESOURCE"/>
+  <resource name="checkRopePressed" type="RESOURCE"/>
+  <resource name="checkPayPressed" type="RESOURCE"/>
+  <resource name="checkFlarePressed" type="RESOURCE"/>
+</resources>

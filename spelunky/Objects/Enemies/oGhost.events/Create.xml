@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="604" library="1">
+      <!--action name: Inherited-->
+      <kind>NORMAL</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>false</canApplyTo>
+      <actionType>FUNCTION</actionType>
+      <functionName>action_inherited</functionName>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments/>
+    </action>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">image_speed = 0.5;
+setCollisionBounds(4, 0, 12, 16);
+origX = 0;
+origY = 0;
+xVel = 0;
+yVel = 0;
+xAcc = 0.2;
+yAcc = 0.2;
+
+// stats
+hp = 1;
+invincible = 1;
+
+// status
+IDLE = 0;
+ATTACK = 1;
+
+status = 1;
+
+LEFT = 0;
+RIGHT = 1;
+facing = RIGHT;
+
+shakeCounter = 0;
+shakeToggle = 1;
+
+playSound(global.sndGhost);</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="604" library="1">
+      <!--action name: Inherited-->
+      <kind>NORMAL</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>false</canApplyTo>
+      <actionType>FUNCTION</actionType>
+      <functionName>action_inherited</functionName>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments/>
+    </action>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">makeActive();
+setCollisionBounds(0, 0, 32, 32);
+xVel = 2.5;
+image_speed = 0.25;
+
+// stats
+type = "Alien Boss";
+hp = 10;
+invincible = 0;
+
+IDLE = 0;
+DEAD = 99;
+status = IDLE;
+
+canPickUp = false;
+bounced = false;
+dead = false;
+counter = 0;
+
+LEFT = 0;
+RIGHT = 1;
+facing = LEFT;
+
+shakeCounter = 0;
+shakeToggle = 1;
+
+psychicRecover = 100;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

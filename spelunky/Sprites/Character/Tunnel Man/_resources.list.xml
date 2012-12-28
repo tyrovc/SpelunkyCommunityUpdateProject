@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sTunnelLeft" type="RESOURCE"/>
+  <resource name="sTunnelLookL" type="RESOURCE"/>
+  <resource name="sTunnelPushL" type="RESOURCE"/>
+  <resource name="sTunnelWhoaL" type="RESOURCE"/>
+  <resource name="sTunnelRunL" type="RESOURCE"/>
+  <resource name="sTunnelHangL" type="RESOURCE"/>
+  <resource name="sTunnelLookRunL" type="RESOURCE"/>
+  <resource name="sTunnelDuckL" type="RESOURCE"/>
+  <resource name="sTunnelStunL" type="RESOURCE"/>
+  <resource name="sTunnelDieL" type="RESOURCE"/>
+  <resource name="sTunnelDtHL" type="RESOURCE"/>
+  <resource name="sTunnelCrawlL" type="RESOURCE"/>
+  <resource name="sTunnelFallL" type="RESOURCE"/>
+  <resource name="sTunnelExit" type="RESOURCE"/>
+  <resource name="sTunnelClimb" type="RESOURCE"/>
+  <resource name="sTunnelClimb2" type="RESOURCE"/>
+  <resource name="sTunnelClimb3" type="RESOURCE"/>
+  <resource name="sTunnelJumpL" type="RESOURCE"/>
+  <resource name="sTunnelAttackL" type="RESOURCE"/>
+  <resource name="sTunnelDieLL" type="RESOURCE"/>
+  <resource name="sTunnelDieLR" type="RESOURCE"/>
+  <resource name="sTunnelLBounce" type="RESOURCE"/>
+  <resource name="sTunnelLFall" type="RESOURCE"/>
+</resources>

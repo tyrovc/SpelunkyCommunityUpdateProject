@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="4">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (global.lake)
+{
+    global.message = "YOU HEAR RUSHING WATER...";
+    global.message2 = "";
+    global.messageTimer = 200;
+}
+else if (global.sacrificePit)
+{
+    global.message = "I CAN HEAR PRAYERS TO KALI!";
+    global.message2 = "";
+    global.messageTimer = 200;
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

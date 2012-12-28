@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="OTHER" id="3">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (surface_exists(screen))
+{
+    surface_set_target(screen);
+    draw_clear(0);
+    surface_free(screen);
+}
+if (surface_exists(pSurf))
+{
+    surface_set_target(pSurf);
+    draw_clear(0);
+    surface_free(pSurf);
+}
+if (surface_exists(darkSurf))
+{
+    surface_set_target(darkSurf);
+    draw_clear(0);
+    surface_free(darkSurf);
+}
+stopAllMusic();
+SS_Unload();
+scrWriteStats();</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

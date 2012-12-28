@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="604" library="1">
+      <!--action name: Inherited-->
+      <kind>NORMAL</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>false</canApplyTo>
+      <actionType>FUNCTION</actionType>
+      <functionName>action_inherited</functionName>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments/>
+    </action>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if ((x &gt; view_xview[0]-20 and x &lt; view_xview[0] + view_wview[0]+4 and
+        y &gt; view_yview[0]-20 and y &lt; view_yview[0] + view_hview[0]+4))
+{
+moveTo(xVel,yVel);
+
+yVel += myGrav;
+if (yVel &gt; yVelLimit) yVel = yVelLimit;
+
+if (collision_point(x+8, y+8, oSolid, 0, 0)) hp = -999;
+
+if (hp &lt; 1)
+{
+    if (countsAsKill)
+    {
+        if (isRealLevel()) global.enemyKills[9] += 1;
+        global.firefrogs += 1;
+        global.kills += 1;
+    }
+    obj = instance_create(x+8, y+8, oFireFrogBomb);
+    instance_destroy();
+}
+
+if (isCollisionRight(1))
+{
+    xVel = -1;
+}
+
+if (isCollisionLeft(1))
+{
+    xVel = 1;
+}
+
+colBot = false;
+if (isCollisionBottom(1)) colBot = true;
+
+dist = distance_to_object(oCharacter)
+
+if (status == IDLE)
+{
+    xVel = 0;
+    if (counter &gt; 0) counter -= 1;
+    else if (dist &lt; 64) status = BOUNCE;
+    //if (dist &lt; 48) status = BOUNCE;
+    if (status == BOUNCE) playSound(global.sndFrog);
+}
+else if (status == RECOVER)
+{
+    if (colBot)
+    {
+        status = IDLE;
+        xVel = 0;
+        yVel = 0;
+        counter = rand(10,40);
+    }
+}
+else if (status == BOUNCE)
+{
+    if (colBot)
+    {
+        yVel = -1 * rand(2,4);
+        if (oCharacter.x &lt; x)
+        {
+            facing = LEFT;
+            xVel = -3;
+        }
+        else
+        {
+            facing = RIGHT;
+            xVel = 3;
+        }
+    }
+    else
+    {
+        status = RECOVER;
+    }
+}
+else if (status != DROWNED)
+{
+    status = IDLE;
+    xVel = 0;
+}
+
+if (isCollisionTop(1))
+    yVel = 1;
+
+//if (isCollisionSolid())
+//  y -= 2;
+
+if (not colBot) sprite_index = sFireFrogJumpL;
+else sprite_index = sFireFrogLeft;
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

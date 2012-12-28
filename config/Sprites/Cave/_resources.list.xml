@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sConfigLogo" type="RESOURCE"/>
+  <resource name="sCaveBG" type="RESOURCE"/>
+  <resource name="sCaveTop" type="RESOURCE"/>
+  <resource name="sCaveDown" type="RESOURCE"/>
+  <resource name="sDoor" type="RESOURCE"/>
+  <resource name="sAltar" type="RESOURCE"/>
+  <resource name="sGoldIdol" type="RESOURCE"/>
+  <resource name="sPlayer" type="RESOURCE"/>
+  <resource name="sCaveFringe" type="RESOURCE"/>
+</resources>

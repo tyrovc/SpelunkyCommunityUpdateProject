@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">oScreen.enabled = true;
+global.drawHUD = true;
+global.gameStart = true;
+global.shake = 0;
+shakeSwitch = false;
+musicFade = false;
+musicFadeTimer = 0;
+global.xviewPrev = 0
+global.yviewPrev = 0;
+
+global.xmoney = 0;
+global.xtime = 0;
+
+global.ghostExists = false;
+
+if (global.darkLevel) darkness = 1;
+else darkness = 0;
+global.darknessLerp = 0;
+
+if (global.music)
+{
+    startMusic();
+}
+
+if (instance_exists(oPlayer1))
+{
+    with oPlayer1
+    {
+        scrHoldItem(global.pickupItem);
+        holdItem.cost = 0;
+        if (global.kaliPunish &gt;= 2)
+        {
+            instance_create(x, y, oBall);
+            obj = instance_create(x, y, oChain);
+            obj.linkVal = 1;
+            obj = instance_create(x, y, oChain);
+            obj.linkVal = 2;
+            obj = instance_create(x, y, oChain);
+            obj.linkVal = 3;
+            obj = instance_create(x, y, oChain);
+            obj.linkVal = 4;
+        }
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

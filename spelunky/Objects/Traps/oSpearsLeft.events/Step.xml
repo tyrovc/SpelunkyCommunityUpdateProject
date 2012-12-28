@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (sprite_index = sSpearsLeft and not collision_point(x+16, y, oSpearTrapTop, 0, 0) and not collision_point(x+16, y, oSpearTrapBottom, 0, 0))
+{
+    instance_destroy();
+}
+if (sprite_index = sSpearsRight and not collision_point(x-16, y, oSpearTrapTop, 0, 0) and not collision_point(x-16, y, oSpearTrapBottom, 0, 0))
+{
+    instance_destroy();
+}
+depth = 995;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

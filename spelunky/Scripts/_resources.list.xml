@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="Collision" type="GROUP"/>
+  <resource name="Platform Engine" type="GROUP"/>
+  <resource name="Character" type="GROUP"/>
+  <resource name="Level Editor" type="GROUP"/>
+  <resource name="Level Generation" type="GROUP"/>
+  <resource name="In Level" type="GROUP"/>
+  <resource name="Control" type="GROUP"/>
+  <resource name="Audio" type="GROUP"/>
+  <resource name="Stat Tracking" type="GROUP"/>
+  <resource name="Highscores" type="GROUP"/>
+  <resource name="scrInit" type="RESOURCE"/>
+  <resource name="scrCheckCollisions" type="RESOURCE"/>
+  <resource name="scrGetFavorMsg" type="RESOURCE"/>
+  <resource name="scrCreateBlood" type="RESOURCE"/>
+  <resource name="scrCreateFlame" type="RESOURCE"/>
+  <resource name="scrClearGlobals" type="RESOURCE"/>
+  <resource name="scrGetKey" type="RESOURCE"/>
+  <resource name="scrGetChar" type="RESOURCE"/>
+  <resource name="scrGetJoy" type="RESOURCE"/>
+  <resource name="scrDrawHUD" type="RESOURCE"/>
+  <resource name="rand" type="RESOURCE"/>
+</resources>

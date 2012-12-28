@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sOlmec" type="RESOURCE"/>
+  <resource name="sOlmecStart1" type="RESOURCE"/>
+  <resource name="sOlmecStart2" type="RESOURCE"/>
+  <resource name="sOlmecStart3" type="RESOURCE"/>
+  <resource name="sOlmecDebris" type="RESOURCE"/>
+  <resource name="sOlmecDebris2" type="RESOURCE"/>
+  <resource name="sOlmecDebris3" type="RESOURCE"/>
+</resources>

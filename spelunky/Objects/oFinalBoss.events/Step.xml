@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//if (not olmecDead and not doorOpen)
+if (olmecDead and not doorOpen)
+{
+    doorOpen = true;
+    obj = instance_place(640, 544, oEntrance);
+    with obj { instance_destroy(); }
+    instance_create(640, 544, oXEnd);
+    if (not collision_point(640, 560, oSolid, 0, 0))
+    {
+        brick = instance_create(640, 560, oTemple);
+        with brick { invincible = true; }
+    }
+    else
+    {
+        brick = instance_position(640, 560, oSolid);
+        with brick { invincible = true; }
+    }
+    playSound(global.sndThump);
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sManTrapLeft" type="RESOURCE"/>
+  <resource name="sManTrapSleepL" type="RESOURCE"/>
+  <resource name="sManTrapEatL" type="RESOURCE"/>
+  <resource name="sManTrapEatCavemanL" type="RESOURCE"/>
+  <resource name="sManTrapEatDamselL" type="RESOURCE"/>
+  <resource name="sManTrapEatShopkeeperL" type="RESOURCE"/>
+  <resource name="sManTrapEatTunnelL" type="RESOURCE"/>
+  <resource name="sManTrapEatVampire" type="RESOURCE"/>
+  <resource name="sManTrapEatYeti" type="RESOURCE"/>
+  <resource name="sManTrapEatHawkman" type="RESOURCE"/>
+  <resource name="sManTrapTemp" type="RESOURCE"/>
+  <resource name="sManTrapStunL" type="RESOURCE"/>
+</resources>

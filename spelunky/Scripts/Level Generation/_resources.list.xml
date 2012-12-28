@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="scrInitLevel" type="RESOURCE"/>
+  <resource name="scrCheckWaterTop" type="RESOURCE"/>
+  <resource name="scrLevelGen" type="RESOURCE"/>
+  <resource name="scrSetupWalls" type="RESOURCE"/>
+  <resource name="scrEntityGen" type="RESOURCE"/>
+  <resource name="scrTreasureGen" type="RESOURCE"/>
+  <resource name="scrGetRoomX" type="RESOURCE"/>
+  <resource name="scrGetRoomY" type="RESOURCE"/>
+  <resource name="scrRoomGen" type="RESOURCE"/>
+  <resource name="scrRoomGen2" type="RESOURCE"/>
+  <resource name="scrRoomGenMarket" type="RESOURCE"/>
+  <resource name="scrRoomGen3" type="RESOURCE"/>
+  <resource name="scrRoomGenYeti" type="RESOURCE"/>
+  <resource name="scrRoomGen4" type="RESOURCE"/>
+  <resource name="scrRoomGen5" type="RESOURCE"/>
+  <resource name="scrGetName" type="RESOURCE"/>
+  <resource name="scrShopItemsGen" type="RESOURCE"/>
+  <resource name="scrGenerateItem" type="RESOURCE"/>
+</resources>

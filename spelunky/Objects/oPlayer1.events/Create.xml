@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="604" library="1">
+      <!--action name: Inherited-->
+      <kind>NORMAL</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>false</canApplyTo>
+      <actionType>FUNCTION</actionType>
+      <functionName>action_inherited</functionName>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments/>
+    </action>
+    <action id="601" library="1">
+      <!--action name: Execute_Script-->
+      <kind>NORMAL</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>FUNCTION</actionType>
+      <functionName>action_execute_script</functionName>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="SCRIPT">characterCreateEvent</argument>
+        <argument kind="EXPRESSION">0</argument>
+        <argument kind="EXPRESSION">0</argument>
+        <argument kind="EXPRESSION">0</argument>
+        <argument kind="EXPRESSION">0</argument>
+        <argument kind="EXPRESSION">0</argument>
+      </arguments>
+    </action>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">// for debugging
+firstLevelSkip = 1;
+levelSkip = 1;
+
+if (global.isDamsel) sprite_index = sDamselLeft;
+else if (global.isTunnelMan) sprite_index = sTunnelLeft;
+
+// reset gamepad
+/*
+gamepad.attackPressed = false;
+gamepad.attack = false;
+gamepad.startPressed = false;
+gamepad.start = false;
+*/
+
+active = true;
+dead = false;
+deadCounter = 100;
+stunned = false;
+bounced = false;
+myGrav = 0.6;
+
+fallTimer = 0;
+stunTimer = 0;
+wallHurt = 0;
+shopThrow = false;
+yetiThrow = false;
+hawkThrow = false;
+pushTimer = 0;
+whoaTimer = 0;
+whoaTimerMax = 30;
+distToNearestLightSource = 999;
+
+// swimming
+bubbleTimer = 0;
+bubbleTimerMax = 20;
+
+// gambling
+bet = 0;
+point = false;
+
+climbSndToggle = false;
+walkSndToggle = false;
+
+kAttack = true;
+kAttackPressed = false;
+whipping = false;
+cantJump = 0;
+kJumped = false;
+burning = 0;
+firing = 0;
+firingMax = 20;
+firingPistolMax = 20;
+firingShotgunMax = 40;
+bowArmed = false;
+bowStrength = 0;
+jetpackFuel = 0;
+bloodless = false;
+
+ // used with Kapala
+redColor = 0;
+redToggle = false;
+
+kAttackReleased = 0;
+holdItem = 0;
+holdItemType = "";
+pickupItemType = "";
+kItem = 0;
+kItemPressed = 0;
+kItemReleased = 0;
+kRope = 0;
+kBomb = 0;
+kPay = 0;
+
+holdArrow = 0;
+holdArrowToggle = false;
+bombArrowCounter = 80;
+ARROW_NORM = 1;
+ARROW_BOMB = 2;
+
+moveToggle = true;
+
+viewCount = 0;
+lookOff = 0;
+
+pExit = 0;
+
+xSTART = 0;
+xTUTORIAL = 1;
+xSCORES = 2;
+xTITLE = 3;
+xEND = 4;
+xSHORTCUT5 = 5;
+xSHORTCUT9 = 6;
+xSUN = 7;
+xMOON = 8;
+xSTARS = 9;
+xCHANGE = 10;
+xSHORTCUT13 = 11;
+xCHANGE2 = 12;
+
+if (isRoom("rOlmec")) active = false;
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

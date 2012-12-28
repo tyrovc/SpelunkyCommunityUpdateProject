@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="Treasures" type="GROUP"/>
+  <resource name="Saleable" type="GROUP"/>
+  <resource name="Weapons" type="GROUP"/>
+  <resource name="Other" type="GROUP"/>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">draw_sprite(sprite_index, -1, x, y);
+if (sprite_index == sJawsLeft)
+{
+    if (hp &lt; 10) draw_sprite(sJawsBody3L, 0, x+16, y);
+    else if (hp &lt; 20) draw_sprite(sJawsBody2L, 0, x+16, y);
+    else draw_sprite(sJawsBody1L, 0, x+16, y);
+}
+else if (sprite_index == sJawsRight)
+{
+    if (hp &lt; 10) draw_sprite(sJawsBody3R, 0, x-48, y);
+    else if (hp &lt; 20) draw_sprite(sJawsBody2R, 0, x-48, y);
+    else draw_sprite(sJawsBody1R, 0, x-48, y);
+}
+/* debug
+draw_set_font(global.myFontSmall);
+draw_set_color(c_white);
+draw_text(x, y-16, string(status) + ":" + string(counter));
+*/</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

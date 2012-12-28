@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sCaravan1" type="RESOURCE"/>
+  <resource name="sCaravan2" type="RESOURCE"/>
+  <resource name="sCaravan3" type="RESOURCE"/>
+  <resource name="sCavemanLeft" type="RESOURCE"/>
+  <resource name="sCavemanRunLeft" type="RESOURCE"/>
+  <resource name="sCavemanDieLR" type="RESOURCE"/>
+  <resource name="sCavemanDieLL" type="RESOURCE"/>
+  <resource name="sCavemanBounceL" type="RESOURCE"/>
+  <resource name="sCavemanFallL" type="RESOURCE"/>
+  <resource name="sCavemanStunL" type="RESOURCE"/>
+  <resource name="sCavemanDeadL" type="RESOURCE"/>
+  <resource name="sCavemanWorshipR" type="RESOURCE"/>
+  <resource name="sCaveManWorshipL" type="RESOURCE"/>
+  <resource name="sCavemanHeldL" type="RESOURCE"/>
+  <resource name="sCavemanDHeldL" type="RESOURCE"/>
+  <resource name="sFrozenCaveman" type="RESOURCE"/>
+</resources>

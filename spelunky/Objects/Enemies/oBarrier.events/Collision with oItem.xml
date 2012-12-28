@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="oItem">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (other.type == "Bomb")
+{
+    with other
+    {
+        sprite_index = sBombArmed;
+        image_speed = 1;
+        alarm[1] = rand(4,8);
+    }
+}
+
+other.xVel = -rand(4,6);
+other.yVel = -2;
+
+if (other.held)
+{
+    if (oCharacter) oCharacter.holdItem = 0;
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

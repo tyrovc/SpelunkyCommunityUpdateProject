@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="oYeti">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (status != STUNNED and status != EATING)
+{
+    xVel = 0;
+    status = EATING;
+    if (other.x &gt; x) facing = RIGHT;
+    else facing = LEFT;
+    sprite_index = sManTrapEatYeti;
+        
+    with other { instance_destroy(); }
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">/*
+instance_create(n, 128, oBasket);
+instance_create(n, 128, oRim);
+instance_create(n, 128, oRimDeflect);
+obj = instance_create(n+8, 128+8, oPoof);
+obj.xVel = -0.5;
+obj.yVel = -0.5;
+obj = instance_create(n+8, 128+8, oPoof);
+obj.xVel = 0.5;
+obj.yVel = -0.5;
+obj = instance_create(n+8, 128+8, oPoof);
+obj.xVel = 0.5;
+obj.yVel = 0.5;
+obj = instance_create(n+8, 128+8, oPoof);
+obj.xVel = -0.5;
+obj.yVel = 0.5;
+*/
+
+if (timer == 60) alarm[11] = 1;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

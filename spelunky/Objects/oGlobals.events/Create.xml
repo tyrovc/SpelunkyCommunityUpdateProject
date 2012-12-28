@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">// gamepad
+
+globalvar joyid;
+
+joyid = 1;
+
+if (not joystick_exists(1) and joystick_exists(2)) joyid = 2;
+
+//
+
+global.levelSelect = 0; //DEBUG
+
+global.customLevel = false;
+global.testLevel = "";
+
+global.firstTime = false;
+global.usedShortcut = false;
+
+global.darkLevel = false;
+global.lake = false;
+
+global.music = true;
+global.message = "";
+global.message2 = "";
+global.messageTimer = 0;
+global.darknessLerp = 0;
+global.hadDarkLevel = false;
+
+global.udjatBlink = false;
+global.udjatCounter = 0;
+
+global.cleanSolids = false;
+
+// Tunnel Man
+global.tunnel1Max = 100000;
+global.tunnel2Max = 200000;
+global.tunnel3Max = 300000;
+
+global.dataFile = "scores.dat" // path/filename to save scores
+global.tunnel1 = scrGetScore(8)
+global.tunnel2 = scrGetScore(9)
+
+// Minigames
+global.mini1 = 0;
+global.mini2 = 0;
+global.mini3 = 0;
+global.scoresStart = 0;
+global.isDamsel = false;
+global.isTunnelMan = false;
+
+// Highscores
+global.newMoney = false;
+global.newKills = false;
+global.newSaves = false;
+global.newTime = false;
+
+scrClearGlobals();
+
+//Spelunky 1.2 July 3, 2012 implementation of portable highscores. Loads old scores from registry, then saves to data file in directory
+// global.emptyHighscores is used in oImport and oTitle (doesn't allow player to import scores if none exist)
+if (highscore_value(1) &lt;= 9000000 and
+    highscore_value(2) &lt;= 8000000 and
+    highscore_value(3) &lt;= 7000000 and
+    highscore_value(4) &lt;= 6000000 and
+    highscore_value(5) &lt;= 5000000 and
+    highscore_value(6) &lt;= 4000000 and
+    highscore_value(7) &lt;= 3000000 and
+    highscore_value(8) &lt;= 2000000 and
+    highscore_value(9) &lt;= 1000000)
+{
+    global.emptyHighscores = true; // no Spelunky scores found in registry
+}
+else global.emptyHighscores = false;
+
+if !file_exists(global.dataFile)
+{
+    if(global.emptyHighscores=true){
+        scrResetHighscores();
+        global.firstTime = true;
+    }else{
+        scrImportHighscores();
+    }
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

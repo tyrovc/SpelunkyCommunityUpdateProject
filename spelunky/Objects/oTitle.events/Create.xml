@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">global.lake = false;
+global.cemetary = false;
+
+global.keepScore = true;
+darkness = 0;
+needDark = true;
+state = 0;
+global.scoresStart = 0;
+fadeOut = false;
+
+global.customLevel = false;
+global.testLevel = "";
+global.prevCustomLevel = "";
+
+view_xview[0] = 320;
+
+global.newMoney = false;
+global.newKills = false;
+global.newSaves = false;
+global.newTime = false;
+
+tMoney = scrGetScore(1);
+tTime = scrGetScore(2);
+tKills = scrGetScore(3);
+tSaves = scrGetScore(4);
+
+// Tunnel Man
+if (global.tunnel1 == 0 or (global.tunnel1 &gt; 0 and global.tunnel2 == 0))
+{
+    instance_create(352, 96, oLadderOrange);
+    instance_create(352, 96+16, oLadderTop);
+    instance_create(352, 96+32, oLadderOrange);
+    instance_create(352, 96+48, oLadderOrange);
+    instance_create(352, 96+64, oLadderOrange);
+    instance_create(352, 96+80, oLadderOrange);
+    
+    if (global.tunnel2 == 0)
+    {
+        instance_create(128, 112, oLevel9Sign);
+        instance_create(144, 128, oXShortcut9);
+        if (global.tunnel1 == 0)
+        {
+            instance_create(192, 112, oLevel13Sign);
+            instance_create(208, 128, oXShortcut13);
+        }
+    } 
+}
+else
+{
+    instance_create(320, 96, oBrick);
+    instance_create(336, 96, oBrick);
+}
+
+if (tMoney &gt;= 200000 &amp;&amp; tTime &gt; 0 &amp;&amp; tTime &lt;= 600 &amp;&amp; tKills &gt;= 120 &amp;&amp; tSaves &gt;= 8)
+{
+    instance_create(32, 112, oMultiTrophy);
+    instance_create(32, 128, oXChange2);
+}
+else
+{
+    instance_create(32+8, 128+8, oTunnelMan);
+}
+
+if (global.titleStart == 0)
+{
+    darkness = 1;
+    alarm[0] = 50;
+    with oScreen { canPause = false; }
+    //instance_create(280, -32, oPDummy4);
+    //instance_create(280, 32, oFlare);
+}
+else if (global.titleStart == 1) // start at highscore door
+{
+    player = instance_create(432+8, 184, oPlayer1);
+    player.facing = 19;
+    instance_create(320+280, 188, oFlare);
+    with oScreen { canPause = true; }
+    playMusic(global.musTitle, true);
+    if (global.firstTime) instance_create(384, 144, oHintHand);
+}
+else if (global.titleStart == 2) // start at rope
+{
+    player = instance_create(320+280, 184, oPlayer1);
+    player.facing = 18;
+    instance_create(320+280, 188, oFlare);
+    with oScreen { canPause = true; }
+    playMusic(global.musTitle, true);
+    if (global.firstTime) instance_create(384, 144, oHintHand);
+}
+else if (global.titleStart == 3) // start at tutorial door
+{
+    player = instance_create(336+8, 184, oPlayer1);
+    player.facing = 19;
+    instance_create(320+280, 188, oFlare);
+    with oScreen { canPause = true; }
+    playMusic(global.musTitle, true);
+    if (global.firstTime) instance_create(384, 144, oHintHand);
+}
+
+if (global.firstTime)
+{
+    instance_create(320, 160, oBrick);
+    instance_create(336, 160, oBrick);
+    instance_create(336, 176, oBrick);
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

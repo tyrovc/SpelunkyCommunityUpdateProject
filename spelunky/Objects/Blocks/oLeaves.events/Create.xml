@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (global.cemetary) sprite_index = sLeavesDead;
+
+if (collision_point(x-16, y, oTree, 0, 0) or collision_point(x-16, y, oLeaves, 0, 0))
+{
+    if (global.cemetary) sprite_index = sLeavesDeadR;
+    else sprite_index = sLeavesRight;
+}
+
+spriteSet = false;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

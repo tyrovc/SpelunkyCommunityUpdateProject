@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">drawStatus = 0;
+moneyCount = 0;
+fadeOut = false;
+fadeLevel = 0;
+window_set_cursor(cr_none);
+poop = false;
+
+alarm[0] = 50;
+
+with oMenu
+{
+    visible = false;
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

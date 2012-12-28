@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="oPlayer1">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (status == IDLE and abs(other.x-(x+8)) &lt; 6 and counter = 0)
+{
+    if (other.state &lt;= 13 and other.sprite_index != sPExit and other.sprite_index != sDamselExit)
+    {
+        sprite_index = sSpringTrapSprung;
+        playSound(global.sndBoing);
+        status = SPRUNG;
+        with other
+        {
+            y -= 16;
+            yVel = -16;
+        }
+        counter = 10;
+    }
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">on = false;
+
+if (y == 32 and global.screenScale == 1)
+{
+    on = true
+    sprite_index = sBoxMarked;
+}
+else if (y == 40 and global.screenScale == 2)
+{
+    on = true
+    sprite_index = sBoxMarked;
+}
+else if (y == 48 and global.screenScale == 3)
+{
+    on = true
+    sprite_index = sBoxMarked;
+}
+else if (y == 56 and global.screenScale == 4)
+{
+    on = true
+    sprite_index = sBoxMarked;
+}
+else if (y == 64 and global.screenScale == 5)
+{
+    on = true
+    sprite_index = sBoxMarked;
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

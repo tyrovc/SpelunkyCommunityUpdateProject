@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sDesertTop" type="RESOURCE"/>
+  <resource name="sDesert" type="RESOURCE"/>
+  <resource name="sDesert2" type="RESOURCE"/>
+  <resource name="sDesertTopNight" type="RESOURCE"/>
+  <resource name="sDesertNight" type="RESOURCE"/>
+  <resource name="sDesertNight2" type="RESOURCE"/>
+  <resource name="sShrubDark" type="RESOURCE"/>
+  <resource name="sShrub" type="RESOURCE"/>
+  <resource name="sMoon" type="RESOURCE"/>
+  <resource name="sPalmTreeDark" type="RESOURCE"/>
+  <resource name="sPalmTree" type="RESOURCE"/>
+  <resource name="sFlare" type="RESOURCE"/>
+  <resource name="sFlareSpark" type="RESOURCE"/>
+  <resource name="sIntroBG" type="RESOURCE"/>
+  <resource name="sBGEnd3" type="RESOURCE"/>
+  <resource name="sCamel" type="RESOURCE"/>
+  <resource name="sCamelTunnel" type="RESOURCE"/>
+  <resource name="sCamelDamsel" type="RESOURCE"/>
+</resources>

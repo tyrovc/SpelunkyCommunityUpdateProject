@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sVineSource" type="RESOURCE"/>
+  <resource name="sVineTop" type="RESOURCE"/>
+  <resource name="sVine" type="RESOURCE"/>
+  <resource name="sVineBottom" type="RESOURCE"/>
+  <resource name="sLadder" type="RESOURCE"/>
+  <resource name="sLadderTop" type="RESOURCE"/>
+</resources>

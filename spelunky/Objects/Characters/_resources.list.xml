@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="oYellHelp" type="RESOURCE"/>
+  <resource name="oDamsel" type="RESOURCE"/>
+  <resource name="oDamselKiss" type="RESOURCE"/>
+  <resource name="oShopkeeper" type="RESOURCE"/>
+  <resource name="oShopkeeper2" type="RESOURCE"/>
+  <resource name="oTunnelMan" type="RESOURCE"/>
+</resources>

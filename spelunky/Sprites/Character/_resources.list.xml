@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="Main Dude" type="GROUP"/>
+  <resource name="Damsel" type="GROUP"/>
+  <resource name="Tunnel Man" type="GROUP"/>
+  <resource name="sYellHelp" type="RESOURCE"/>
+  <resource name="sTunnelManLeft" type="RESOURCE"/>
+  <resource name="sTunnelManRight" type="RESOURCE"/>
+</resources>

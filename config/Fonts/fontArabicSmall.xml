@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<font>
+  <fontName>Courier New</fontName>
+  <bold>false</bold>
+  <italic>false</italic>
+  <rangeMin>0</rangeMin>
+  <rangeMax>255</rangeMax>
+  <size>8</size>
+  <charset>178</charset>
+  <antialias>1</antialias>
+</font>

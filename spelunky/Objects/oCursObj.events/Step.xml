@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (mouse_x &gt; view_xview[0] and mouse_x &lt; view_xview[0]+320 and
+    mouse_y &gt; view_yview[0] and mouse_y &lt; view_yview[0]+240)
+{
+    x = mouse_x-8;
+    y = mouse_y-8;
+    move_snap(16, 16);
+    if (x &lt; 0) x = 0;
+    if (x &gt; room_width-16) x = room_width-16;
+    if (y &lt; 0) y = 0;
+    if (y &gt; room_height-16) y = room_height-16;
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

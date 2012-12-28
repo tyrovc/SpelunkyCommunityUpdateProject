@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sVampireBatHang" type="RESOURCE"/>
+  <resource name="sVampireBatLeft" type="RESOURCE"/>
+  <resource name="sVampireBatRight" type="RESOURCE"/>
+  <resource name="sVampireLeft" type="RESOURCE"/>
+  <resource name="sVampireRunL" type="RESOURCE"/>
+  <resource name="sVampireJumpL" type="RESOURCE"/>
+  <resource name="sVampireDieLL" type="RESOURCE"/>
+  <resource name="sVampireDieLR" type="RESOURCE"/>
+  <resource name="sVampireBounceL" type="RESOURCE"/>
+  <resource name="sVampireFallL" type="RESOURCE"/>
+  <resource name="sVampireDeadL" type="RESOURCE"/>
+  <resource name="sVampireStunL" type="RESOURCE"/>
+  <resource name="sVampireHeldL" type="RESOURCE"/>
+  <resource name="sVampireDHeldL" type="RESOURCE"/>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sGrave" type="RESOURCE"/>
+  <resource name="sGrave2" type="RESOURCE"/>
+  <resource name="sGrave3" type="RESOURCE"/>
+  <resource name="sGrave4" type="RESOURCE"/>
+  <resource name="sGrave5" type="RESOURCE"/>
+  <resource name="sGrave6" type="RESOURCE"/>
+  <resource name="sGraveAsh" type="RESOURCE"/>
+</resources>

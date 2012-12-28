@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sYetiThrowL" type="RESOURCE"/>
+  <resource name="sYetiLeft" type="RESOURCE"/>
+  <resource name="sYetiRunLeft" type="RESOURCE"/>
+  <resource name="sYetiDieLR" type="RESOURCE"/>
+  <resource name="sYetiDieLL" type="RESOURCE"/>
+  <resource name="sYetiBounceL" type="RESOURCE"/>
+  <resource name="sYetiFallL" type="RESOURCE"/>
+  <resource name="sYetiStunL" type="RESOURCE"/>
+  <resource name="sYetiDeadL" type="RESOURCE"/>
+  <resource name="sYetiHeldL" type="RESOURCE"/>
+  <resource name="sYetiDHeldL" type="RESOURCE"/>
+</resources>

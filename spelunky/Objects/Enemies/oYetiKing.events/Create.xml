@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="604" library="1">
+      <!--action name: Inherited-->
+      <kind>NORMAL</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>false</canApplyTo>
+      <actionType>FUNCTION</actionType>
+      <functionName>action_inherited</functionName>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments/>
+    </action>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">makeActive();
+setCollisionBounds(6, 0, 26, 32);
+xVel = 2.5;
+image_speed = 0.25;
+
+// stats
+type = "Yeti King";
+hp = 30;
+invincible = 0;
+heavy = true;
+
+IDLE = 0;
+WALK = 1;
+TURN = 2;
+ATTACK = 3;
+STUNNED = 98;
+DEAD = 99;
+status = IDLE;
+
+canPickUp = false;
+bounced = false;
+dead = false;
+whipped = 0;
+counter = 0;
+attackTimer = 0;
+
+LEFT = 0;
+RIGHT = 1;
+facing = RIGHT;
+
+shakeCounter = 0;
+shakeToggle = 1;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

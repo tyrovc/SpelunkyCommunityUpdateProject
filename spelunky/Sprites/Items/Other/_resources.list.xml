@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sFakeBonesLeft" type="RESOURCE"/>
+  <resource name="sBonesLeft" type="RESOURCE"/>
+  <resource name="sParaUsed" type="RESOURCE"/>
+  <resource name="sChest" type="RESOURCE"/>
+  <resource name="sChestOpen" type="RESOURCE"/>
+  <resource name="sLockedChest" type="RESOURCE"/>
+  <resource name="sLockedChestOpen" type="RESOURCE"/>
+  <resource name="sCrate" type="RESOURCE"/>
+  <resource name="sFlareCrate" type="RESOURCE"/>
+  <resource name="sDiceRoll" type="RESOURCE"/>
+  <resource name="sDice6" type="RESOURCE"/>
+  <resource name="sDice5" type="RESOURCE"/>
+  <resource name="sDice4" type="RESOURCE"/>
+  <resource name="sDice3" type="RESOURCE"/>
+  <resource name="sDice2" type="RESOURCE"/>
+  <resource name="sDice1" type="RESOURCE"/>
+  <resource name="sRedArrowDown" type="RESOURCE"/>
+  <resource name="sCrateOpen" type="RESOURCE"/>
+  <resource name="sBombsGet" type="RESOURCE"/>
+  <resource name="sRopeGet" type="RESOURCE"/>
+  <resource name="sItemGet" type="RESOURCE"/>
+</resources>

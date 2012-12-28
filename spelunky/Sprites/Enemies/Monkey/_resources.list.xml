@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sMonkeyLeft" type="RESOURCE"/>
+  <resource name="sMonkeyWalkL" type="RESOURCE"/>
+  <resource name="sMonkeyHangL" type="RESOURCE"/>
+  <resource name="sMonkeyClimbL" type="RESOURCE"/>
+  <resource name="sMonkeyJumpL" type="RESOURCE"/>
+</resources>

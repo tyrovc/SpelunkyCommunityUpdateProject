@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="oSolid">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (true)
+{   
+    if (other.invincible or abs(xVel) &lt; 1)
+    {
+        xVel = -xVel * 0.5;
+    }
+    else
+    {
+        if (abs(xVel) &lt; 1 or other.y &gt; y+13)
+        {
+            y -= 1;
+            // nothing
+        }
+        else
+        {
+            with other
+            {
+                tile = tile_layer_find(3, x, y-16);
+                if (tile) tile_delete(tile);
+                tile = instance_position(x+8, y-1, oSpikes);
+                if (tile) with tile { instance_destroy(); }
+                instance_destroy();
+            }
+            playSound(global.sndCrunch);
+        }
+        if (xVel &gt; 0) xVel -= 0.1;
+        else if (xVel &lt; 0) xVel += 0.1;
+        if (abs(xVel) &lt; 1) xVel = 0;
+    }
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

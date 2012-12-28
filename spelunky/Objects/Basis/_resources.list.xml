@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="oMenu" type="RESOURCE"/>
+  <resource name="oDrawnSprite" type="RESOURCE"/>
+  <resource name="oCharacter" type="RESOURCE"/>
+  <resource name="oEnemy" type="RESOURCE"/>
+  <resource name="oLadder" type="RESOURCE"/>
+  <resource name="oMoveableSolid" type="RESOURCE"/>
+  <resource name="oMovingSolid" type="RESOURCE"/>
+  <resource name="oPlatform" type="RESOURCE"/>
+  <resource name="oSolid" type="RESOURCE"/>
+  <resource name="oBackdrop" type="RESOURCE"/>
+  <resource name="oForeground" type="RESOURCE"/>
+  <resource name="oWater" type="RESOURCE"/>
+  <resource name="oItem" type="RESOURCE"/>
+  <resource name="oTreasure" type="RESOURCE"/>
+  <resource name="oDetritus" type="RESOURCE"/>
+  <resource name="oRubblePiece" type="RESOURCE"/>
+  <resource name="oFrill" type="RESOURCE"/>
+</resources>

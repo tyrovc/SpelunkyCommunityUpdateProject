@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="KEYPRESS" id="112">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (paused and global.plife &gt; 0 and isLevel())
+{
+    instance_activate_all();
+    paused = false;
+    with oPlayer1
+    {
+        if (facing == 18) xVel = -3;
+        else xVel = 3;
+        yVel = -6;
+        global.plife = -99;
+    }
+    
+    if (SS_IsSoundPlaying(global.musTitle)) SS_SetSoundVol(global.musTitle, 10000);
+    if (SS_IsSoundPlaying(global.musCave)) SS_SetSoundVol(global.musCave, 10000);
+    if (SS_IsSoundPlaying(global.musLush)) SS_SetSoundVol(global.musLush, 10000);
+    if (SS_IsSoundPlaying(global.musTemple)) SS_SetSoundVol(global.musTemple, 10000);
+    if (SS_IsSoundPlaying(global.musBoss)) SS_SetSoundVol(global.musBoss, 10000);
+    stopAllMusic();
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

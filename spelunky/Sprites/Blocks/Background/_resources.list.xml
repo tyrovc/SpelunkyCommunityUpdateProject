@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sCaveBG" type="RESOURCE"/>
+  <resource name="sCaveBG1" type="RESOURCE"/>
+  <resource name="sCaveBG2" type="RESOURCE"/>
+  <resource name="sCaveBGEntrance" type="RESOURCE"/>
+  <resource name="sEntrance" type="RESOURCE"/>
+  <resource name="sExit" type="RESOURCE"/>
+  <resource name="sGoldDoor" type="RESOURCE"/>
+  <resource name="sMsgSign" type="RESOURCE"/>
+</resources>

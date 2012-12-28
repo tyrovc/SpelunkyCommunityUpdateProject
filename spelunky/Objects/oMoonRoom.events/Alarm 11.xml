@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="11">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">timer -= 1;
+if (timer == 0)
+{
+    global.mini2 = oMoonRoom.baskets;
+    if (global.mini2 &gt; 99) global.mini2 = 99;
+    scrUpdateHighscores(2);
+    timer -= 1;
+    oGame.drawStatus = 1;
+    with oBatTarget
+    {
+        obj = instance_create(x+8, y, oPoof);
+        obj.xVel = 0;
+        obj.yVel = -1;
+        obj = instance_create(x+8, y, oPoof);
+        obj.xVel = 0;
+        obj.yVel = 1;
+        
+        instance_destroy();
+    }
+    with oEntrance
+    {
+        instance_create(x, y, oXScores);
+        instance_destroy();
+    }
+    alarm[10] = 30;
+}
+else
+    alarm[11] = 30;</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

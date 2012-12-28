@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="OTHER" id="7">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (sprite_index == sJawsTurnL)
+{
+    //dir = 180;
+    sprite_index = sJawsLeft;
+    status = PAUSE;
+    counter = 40;
+}
+else if (sprite_index == sJawsTurnR)
+{
+    //dir = 0;
+    sprite_index = sJawsRight;
+    status = PAUSE;
+    counter = 40;
+    x = x + 48;
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

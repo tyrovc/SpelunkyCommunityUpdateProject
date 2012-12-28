@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="oMenuTop" type="RESOURCE"/>
+  <resource name="oMenuBottom" type="RESOURCE"/>
+  <resource name="oMenuLeft" type="RESOURCE"/>
+  <resource name="oMenuRight" type="RESOURCE"/>
+  <resource name="oMenuUL" type="RESOURCE"/>
+  <resource name="oMenuUR" type="RESOURCE"/>
+  <resource name="oMenuLL" type="RESOURCE"/>
+  <resource name="oMenuLR" type="RESOURCE"/>
+  <resource name="oBlack" type="RESOURCE"/>
+  <resource name="oBlackBG" type="RESOURCE"/>
+  <resource name="oPageUp" type="RESOURCE"/>
+  <resource name="oPageDown" type="RESOURCE"/>
+</resources>

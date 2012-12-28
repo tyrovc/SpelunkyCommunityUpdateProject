@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="gameStepEvent" type="RESOURCE"/>
+  <resource name="scrMoveableSolidRecurseDrop" type="RESOURCE"/>
+  <resource name="characterCreateEvent" type="RESOURCE"/>
+  <resource name="characterStepEvent" type="RESOURCE"/>
+  <resource name="characterDrawEvent" type="RESOURCE"/>
+  <resource name="characterSprite" type="RESOURCE"/>
+  <resource name="makeActive" type="RESOURCE"/>
+  <resource name="platformCharacterIs" type="RESOURCE"/>
+  <resource name="moveTo" type="RESOURCE"/>
+</resources>

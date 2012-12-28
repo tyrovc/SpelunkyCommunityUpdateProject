@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sTitleBG" type="RESOURCE"/>
+  <resource name="sTitle" type="RESOURCE"/>
+  <resource name="sStartSign" type="RESOURCE"/>
+  <resource name="sScoresSign" type="RESOURCE"/>
+  <resource name="sLevel5Sign" type="RESOURCE"/>
+  <resource name="sLevel9Sign" type="RESOURCE"/>
+  <resource name="sLevel13Sign" type="RESOURCE"/>
+  <resource name="sGoldTrophy" type="RESOURCE"/>
+  <resource name="sMultiGold" type="RESOURCE"/>
+  <resource name="sSilverTrophy" type="RESOURCE"/>
+  <resource name="sBronzeTrophy" type="RESOURCE"/>
+  <resource name="sNew" type="RESOURCE"/>
+  <resource name="sSunDoor" type="RESOURCE"/>
+  <resource name="sMoonDoor" type="RESOURCE"/>
+  <resource name="sStarDoor" type="RESOURCE"/>
+  <resource name="sChangingDoor" type="RESOURCE"/>
+  <resource name="sQuitSign" type="RESOURCE"/>
+  <resource name="sTutorialSign" type="RESOURCE"/>
+  <resource name="sResetSign" type="RESOURCE"/>
+  <resource name="sCopy" type="RESOURCE"/>
+</resources>

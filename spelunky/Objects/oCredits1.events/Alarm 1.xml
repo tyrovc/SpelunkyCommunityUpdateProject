@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="1">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (scrolling)
+{
+if (rand(1,8) == 1) instance_create(-16, 176, oShrubScroll);
+else if (rand(1,12) == 1) instance_create(-32, 176-112, oPalmTreeScroll);
+
+instance_create(-16, 176, oDesertTopScroll);
+instance_create(-16, 192, oDesertScroll2);
+instance_create(-16, 208, oDesertScroll);
+instance_create(-16, 224, oDesertScroll);
+with oDesertScroll { scroll = true; }
+with oDesertScroll2 { scroll = true; }
+with oDesertTopScroll { scroll = true; }
+with oShrubScroll { scroll = true; }
+with oPalmTreeScroll { scroll = true; }
+alarm[1] = 16;
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

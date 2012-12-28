@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sHawkThrowL" type="RESOURCE"/>
+  <resource name="sHawkLeft" type="RESOURCE"/>
+  <resource name="sHawkRunLeft" type="RESOURCE"/>
+  <resource name="sHawkDieLR" type="RESOURCE"/>
+  <resource name="sHawkDieLL" type="RESOURCE"/>
+  <resource name="sHawkBounceL" type="RESOURCE"/>
+  <resource name="sHawkFallL" type="RESOURCE"/>
+  <resource name="sHawkStunL" type="RESOURCE"/>
+  <resource name="sHawkDeadL" type="RESOURCE"/>
+  <resource name="sHawkHeldL" type="RESOURCE"/>
+  <resource name="sHawkDHeldL" type="RESOURCE"/>
+</resources>

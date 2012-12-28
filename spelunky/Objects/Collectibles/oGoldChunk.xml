@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<object id="462">
+  <sprite>sGoldChunk</sprite>
+  <solid>true</solid>
+  <visible>true</visible>
+  <depth>100</depth>
+  <persistent>false</persistent>
+  <parent>oTreasure</parent>
+  <mask/>
+</object>

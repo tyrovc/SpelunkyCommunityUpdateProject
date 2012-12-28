@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="scrUseItem" type="RESOURCE"/>
+  <resource name="scrPlayerIsDucking" type="RESOURCE"/>
+  <resource name="scrHoldItem" type="RESOURCE"/>
+  <resource name="scrDropItem" type="RESOURCE"/>
+  <resource name="scrStealItem" type="RESOURCE"/>
+  <resource name="scrFireBow" type="RESOURCE"/>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="oTrapBlock" type="RESOURCE"/>
+  <resource name="oArrowTrapTest" type="RESOURCE"/>
+  <resource name="oArrowTrapRight" type="RESOURCE"/>
+  <resource name="oArrowTrapRightLit" type="RESOURCE"/>
+  <resource name="oArrowTrapLeft" type="RESOURCE"/>
+  <resource name="oArrowTrapLeftLit" type="RESOURCE"/>
+  <resource name="oArrowRepeaterR" type="RESOURCE"/>
+  <resource name="oArrowRepeaterL" type="RESOURCE"/>
+  <resource name="oTemp" type="RESOURCE"/>
+  <resource name="oSpearTrapTop" type="RESOURCE"/>
+  <resource name="oSpearTrapLit" type="RESOURCE"/>
+  <resource name="oSpearTrapBottom" type="RESOURCE"/>
+  <resource name="oSpearsLeft" type="RESOURCE"/>
+  <resource name="oThwompTrap" type="RESOURCE"/>
+  <resource name="oSmashTrap" type="RESOURCE"/>
+  <resource name="oSmashTrapLit" type="RESOURCE"/>
+  <resource name="oCeilingTrap" type="RESOURCE"/>
+  <resource name="oDoor" type="RESOURCE"/>
+  <resource name="oSpikes" type="RESOURCE"/>
+  <resource name="oGiantTikiHead" type="RESOURCE"/>
+  <resource name="oSpringTrap" type="RESOURCE"/>
+  <resource name="oBoulder" type="RESOURCE"/>
+</resources>

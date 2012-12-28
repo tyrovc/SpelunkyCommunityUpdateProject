@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="Init" type="GROUP"/>
+  <resource name="Menu" type="GROUP"/>
+  <resource name="Cave" type="GROUP"/>
+  <resource name="oInit" type="RESOURCE"/>
+  <resource name="oKeyConfig" type="RESOURCE"/>
+  <resource name="oJoyConfig" type="RESOURCE"/>
+  <resource name="oMusic" type="RESOURCE"/>
+  <resource name="oGamepad" type="RESOURCE"/>
+  <resource name="oLoadVal" type="RESOURCE"/>
+  <resource name="supersound" type="GROUP"/>
+</resources>

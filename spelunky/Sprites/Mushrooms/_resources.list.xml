@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sMushroom1" type="RESOURCE"/>
+  <resource name="sMushroom2" type="RESOURCE"/>
+  <resource name="sMushroom3" type="RESOURCE"/>
+  <resource name="sMushroom4" type="RESOURCE"/>
+  <resource name="sMushroom5" type="RESOURCE"/>
+  <resource name="sMushroom6" type="RESOURCE"/>
+  <resource name="sMushroom7" type="RESOURCE"/>
+  <resource name="sMushroom8" type="RESOURCE"/>
+</resources>

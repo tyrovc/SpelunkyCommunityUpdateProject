@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="oDamsel">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (not other.invincible)
+{
+    other.hp -= 3;
+    other.xVel = rand(0,2)-rand(1,2);
+    other.xVel = -1;
+    other.yVel = -6;
+    status = 2;
+}
+
+// instance_create(x, y, oLaserExplode);
+
+// global.checkWater = true;
+
+instance_destroy();</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="oBatIntro" type="RESOURCE"/>
+  <resource name="oIntroBG" type="RESOURCE"/>
+  <resource name="oPalmTreeDark" type="RESOURCE"/>
+  <resource name="oPalmTree" type="RESOURCE"/>
+  <resource name="oShrubDark" type="RESOURCE"/>
+  <resource name="oShrub" type="RESOURCE"/>
+  <resource name="oCamel" type="RESOURCE"/>
+  <resource name="oCaravan" type="RESOURCE"/>
+  <resource name="oMoon" type="RESOURCE"/>
+  <resource name="oDesertTop" type="RESOURCE"/>
+  <resource name="oDesertTopScroll" type="RESOURCE"/>
+  <resource name="oDesert" type="RESOURCE"/>
+  <resource name="oDesert2" type="RESOURCE"/>
+  <resource name="oDesertScroll" type="RESOURCE"/>
+  <resource name="oDesertScroll2" type="RESOURCE"/>
+  <resource name="oPalmTreeScroll" type="RESOURCE"/>
+  <resource name="oShrubScroll" type="RESOURCE"/>
+</resources>

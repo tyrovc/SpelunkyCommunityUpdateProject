@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (keyboard_check_pressed(vk_enter) or
+    keyboard_check_pressed(vk_escape) or
+    checkAttackPressed() or
+    checkStartPressed())
+{
+    if (drawStatus == 7)
+    {
+        if (moneyCount &lt; global.money)
+        {
+            moneyCount = global.money;
+        }
+        else
+        {
+            fadeOut = true;
+        }
+    }
+    else if (drawStatus == 8)
+    {
+        if (gamepad.attackPressed) gamepad.attackPressed = false;
+        if (gamepad.startPressed) gamepad.startPressed = false;
+        scrClearGlobals();
+        room_goto(rHighscores);
+    }
+}
+
+if (drawStatus &gt; 2)
+{
+    moneyDiff = global.money - moneyCount;
+    if (moneyDiff &gt; 1000)
+        moneyCount += 1000;
+    else if (moneyDiff &gt; 100)
+        moneyCount += 100;
+    else
+        moneyCount += moneyDiff;
+        
+    if (drawStatus == 3 and moneyDiff == 0 and not poop)
+    {   
+        alarm[11] = 50;
+        poop = true;
+    }
+}
+
+if (fadeOut)
+{
+    if (fadeLevel &lt; 1) fadeLevel += 0.1;
+    else drawStatus = 8;
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

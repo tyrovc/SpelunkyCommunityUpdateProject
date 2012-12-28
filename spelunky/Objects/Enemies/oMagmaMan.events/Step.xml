@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (hp &gt; 0) hp -= 1;
+if (collision_point(x+8, y+8, oSolid, 0, 0) or hp &lt; 1)
+{
+    xVel = 0;
+    yVel = 0;
+    status = DEAD;
+    sprite_index = sMagmaManDie;
+}
+
+yVel += myGrav;
+if (yVel &gt; yVelLimit) yVel = yVelLimit;
+
+if (isCollisionBottom(1))
+    yVel = 0;
+else
+{
+    instance_create(x+8, y+8, oMagma);
+    instance_destroy();
+}
+/*
+if (status != DEAD and hp &lt; 1)
+{
+    status = DEAD;
+)
+*/
+
+if (rand(1,20) == 1) instance_create(x+rand(4,12), y+rand(4,12), oBurn);
+burning -= 1;
+    
+if (status == IDLE)
+{
+    if (yVel &lt; 0 and isCollisionTop(1))
+    {
+        yVel = 0;
+    }
+
+    if (isCollisionBottom(1) and counter &gt; 0) counter -= 1;    
+    if (counter &lt; 1)
+    {
+        facing = rand(0,1);
+        status = WALK;
+        if (rand(1,6) == 1)
+        {
+            magma = instance_create(x+8, y+8, oMagma);
+            magma.hp = hp;
+            instance_destroy();
+        }
+    }
+}
+else if (status == WALK)
+{
+    if (isCollisionLeft(1) or isCollisionRight(1))
+    {
+        if (facing == LEFT) facing = RIGHT;
+        else facing = LEFT;
+    }
+    
+    if (facing == LEFT)
+    {
+        xVel = -1.5;
+        if (not collision_point(x-1, y+16, oSolid, -1, -1))
+        {
+            status = IDLE;
+            counter = rand(20,50);
+            xVel = 0;
+        }
+    }
+    else
+    {
+        xVel = 1.5;
+        if (not collision_point(x+16, y+16, oSolid, -1, -1))
+        {
+            status = IDLE;
+            counter = rand(20,50);
+            xVel = 0;
+        } 
+    }
+    
+    if (rand(1,100) == 1)
+    {
+        status = IDLE;
+        counter = rand(20,50);
+        xVel = 0;
+    }
+}
+
+moveTo(xVel,yVel);
+if (isCollisionSolid())
+    y -= 2;
+
+if (status &lt; STUNNED and status != THROW)
+{
+    if (abs(xVel) &gt; 0) sprite_index = sMagmaManWalkL;
+    else sprite_index = sMagmaManLeft;
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

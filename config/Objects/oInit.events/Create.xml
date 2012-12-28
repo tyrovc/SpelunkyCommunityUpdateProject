@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">startGame = false;
+
+global.spelunkyEXE = "Spelunky.exe";
+
+global.myFont = font_add_sprite(sFont, ord(' '), false, 0);
+global.myFontSmall = font_add_sprite(sFontSmall, ord(' '), false, 0);
+global.fullscreen = true;
+global.graphicsHigh = true;
+global.downToRun = false;
+
+if (joystick_exists(1) or joystick_exists(2)) global.gamepadOn = true;
+else global.gamepadOn = false;
+global.screenScale = 5;
+global.musicVol = 15;
+global.soundVol = 15;
+
+global.keyUpVal = vk_up;
+global.keyDownVal = vk_down;
+global.keyLeftVal = vk_left;
+global.keyRightVal = vk_right;
+global.keyJumpVal = ord('Z');
+global.keyAttackVal = ord('X');
+global.keyItemVal = ord('C');
+global.keyRunVal = vk_shift;
+global.keyBombVal = ord('A');
+global.keyRopeVal = ord('S');
+global.keyFlareVal = ord('F');
+global.keyPayVal = vk_space;
+
+global.joyJumpVal = 2;
+global.joyAttackVal = 1;
+global.joyItemVal = 8;
+global.joyRunVal = 3;
+global.joyBombVal = 5;
+global.joyRopeVal = 6;
+global.joyFlareVal = 7;
+global.joyPayVal = 4;
+global.joyStartVal = 10;
+
+file = file_text_open_read("settings.cfg");
+if (file)
+{
+    str = file_text_read_string(file);
+    if (str == "0") global.fullscreen = false;
+    file_text_readln(file);
+    str = file_text_read_string(file);
+    if (str == "0") global.graphicsHigh = false;
+    file_text_readln(file);
+    str = file_text_read_string(file);
+    if (str == "0") global.downToRun = false;
+    file_text_readln(file);
+    str = file_text_read_string(file);
+    if (str == "0") global.gamepadOn = false;
+    else global.gamepadOn = true;
+    file_text_readln(file);
+    global.screenScale = real(file_text_read_string(file));
+    file_text_readln(file);
+    global.musicVol = real(file_text_read_string(file));
+    file_text_readln(file);
+    global.soundVol = real(file_text_read_string(file));
+    file_text_close(file);
+}
+
+if (global.musicVol &gt; 19) global.musicVol = 19;
+if (global.musicVol &lt; 2) global.musicVol = 2;
+if (global.soundVol &gt; 19) global.soundVol = 19;
+if (global.soundVol &lt; 2) global.soundVol = 2;
+
+file = file_text_open_read("keys.cfg");
+if (file)
+{
+    global.keyUpVal = real(file_text_read_string(file));
+    file_text_readln(file);
+    global.keyDownVal = real(file_text_read_string(file));
+    file_text_readln(file);
+    global.keyLeftVal = real(file_text_read_string(file));
+    file_text_readln(file);
+    global.keyRightVal = real(file_text_read_string(file));
+    file_text_readln(file);
+    global.keyJumpVal = real(file_text_read_string(file));
+    file_text_readln(file);
+    global.keyAttackVal = real(file_text_read_string(file));
+    file_text_readln(file);
+    global.keyItemVal = real(file_text_read_string(file));
+    file_text_readln(file);
+    global.keyRunVal = real(file_text_read_string(file));
+    file_text_readln(file);
+    global.keyBombVal = real(file_text_read_string(file));
+    file_text_readln(file);
+    global.keyRopeVal = real(file_text_read_string(file));
+    file_text_readln(file);
+    global.keyFlareVal = real(file_text_read_string(file));
+    file_text_readln(file);
+    global.keyPayVal = real(file_text_read_string(file));
+    file_text_close(file);
+}
+
+file = file_text_open_read("gamepad.cfg");
+if (file)
+{
+    global.joyJumpVal = real(file_text_read_string(file));
+    file_text_readln(file);
+    global.joyAttackVal = real(file_text_read_string(file));
+    file_text_readln(file);
+    global.joyItemVal = real(file_text_read_string(file));
+    file_text_readln(file);
+    global.joyRunVal = real(file_text_read_string(file));
+    file_text_readln(file);
+    global.joyBombVal = real(file_text_read_string(file));
+    file_text_readln(file);
+    global.joyRopeVal = real(file_text_read_string(file));
+    file_text_readln(file);
+    global.joyFlareVal = real(file_text_read_string(file));
+    file_text_readln(file);
+    global.joyPayVal = real(file_text_read_string(file));
+    file_text_readln(file);
+    global.joyStartVal = real(file_text_read_string(file));
+    file_text_close(file);
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

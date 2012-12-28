@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="Control" type="GROUP"/>
+  <resource name="supersound" type="GROUP"/>
+  <resource name="scrSaveSettings" type="RESOURCE"/>
+  <resource name="scrExit" type="RESOURCE"/>
+  <resource name="scrGetKey" type="RESOURCE"/>
+  <resource name="scrGetChar" type="RESOURCE"/>
+  <resource name="scrGetJoy" type="RESOURCE"/>
+  <resource name="rand" type="RESOURCE"/>
+</resources>

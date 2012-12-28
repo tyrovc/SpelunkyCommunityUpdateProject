@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="604" library="1">
+      <!--action name: Inherited-->
+      <kind>NORMAL</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>false</canApplyTo>
+      <actionType>FUNCTION</actionType>
+      <functionName>action_inherited</functionName>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments/>
+    </action>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (xVel &gt; 0 and yVel &lt; 0)
+{
+    direction = radtodeg(arctan(-yVel/xVel));
+}
+else if (xVel &lt; 0 and yVel &lt; 0)
+{
+    direction = 180 - radtodeg(arctan(-yVel/-xVel));
+}
+else if (xVel &gt; 0 and yVel &gt; 0)
+{
+    direction = radtodeg(arctan(yVel/xVel));
+}
+else if (xVel &lt; 0 and yVel &gt; 0)
+{
+    direction = 180 + radtodeg(arctan(yVel/-xVel));
+}
+else if (xVel &lt; 0) direction = 180;
+else if (not stuck)
+{
+    if direction &gt; 90 and direction &lt; 270 direction = 180
+    else direction = 0;
+}
+
+image_angle = direction;
+
+// ensure the arrow does not shoot through the target in the Moon challenge
+if (isRoom("rMoon"))
+{
+    if (instance_exists(oTarget))
+    {
+        if (x &gt; oTarget.x and y &gt; oTarget.y-16 and y &lt; oTarget.y+16 and
+            distance_to_object(oTarget) &lt; 4)
+        {
+            x = oTarget.x+4;
+            xVel = 0;
+            yVel = 0;
+        }
+    }
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

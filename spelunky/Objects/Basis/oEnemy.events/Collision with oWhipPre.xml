@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="oWhipPre">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">hp -= other.damage;
+countsAsKill = true;
+if (bloodLeft &gt; 0)
+{
+    scrCreateBlood(x+sprite_width/2, y+sprite_height/2, 1);
+    if (hp &lt; 0) bloodLeft -= 1;
+}
+playSound(global.sndHit);
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

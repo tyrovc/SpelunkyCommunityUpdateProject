@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<background>
+  <useAsTileset>true</useAsTileset>
+  <tiles>
+    <size height="16" width="16"/>
+    <offset x="0" y="0"/>
+    <separation x="0" y="0"/>
+  </tiles>
+  <preload>false</preload>
+  <smoothEdges>false</smoothEdges>
+  <transparent>false</transparent>
+</background>

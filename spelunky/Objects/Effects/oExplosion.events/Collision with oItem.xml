@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="oItem">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if (other.type == "Arrow" or other.type == "Fish Bone" or
+    other.type == "Jar" or other.type == "Skull")
+{
+    with other { instance_destroy(); }
+}
+else if (other.type == "Bomb")
+{
+    with other
+    {
+        sprite_index = sBombArmed;
+        image_speed = 1;
+        alarm[1] = rand(4,8);
+        enemyID = 0;
+    }
+
+    if (other.y &lt; y) other.yVel = -rand(2,4);
+    if (other.x &lt; x) other.xVel = -rand(2,4);
+    else other.xVel = rand(2,4);
+}
+else if (other.type == "Rope")
+{
+    if (not other.falling)
+    {
+        if (other.y &lt; y) other.yVel -= 6;
+        else other.yVel += 6;
+        if (x &gt; other.x) other.xVel -= rand(4,6);
+        else other.xVel += rand(4,6);
+    }
+}
+else
+{
+    if (other.y &lt; y) other.yVel -= 6;
+    else other.yVel += 6;
+    if (x &gt; other.x) other.xVel -= rand(4,6);
+    else other.xVel += rand(4,6);
+}
+
+if (other.held)
+{
+    with oPlayer1
+    {
+        holdItem = 0;
+        pickupItemType = "";
+    }
+    other.held = false;
+}</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

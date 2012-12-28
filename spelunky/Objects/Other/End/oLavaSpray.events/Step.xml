@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">y += yVel;
+if (yVel &gt; -6) yVel += yAcc;
+
+if (collision_point(x, y-1, oEndPlat, 0, 0))
+{
+    oEndPlat.yVel = yVel;
+    oPDummy.yVel = yVel;
+    oBigTreasure.yVel = yVel;
+    oBigTreasure.myGrav = 0;
+}
+
+if (y &lt; -16 and status == 0)
+{
+    yVel = 0;
+    yAcc = 0;
+    alarm[0] = 40;
+    status += 1;
+}
+
+if (not SS_IsSoundPlaying(global.sndFlame)) playSound(global.sndFlame);</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

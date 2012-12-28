@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sWater" type="RESOURCE"/>
+  <resource name="sWaterBottom" type="RESOURCE"/>
+  <resource name="sWaterBottom2" type="RESOURCE"/>
+  <resource name="sWaterBottom3" type="RESOURCE"/>
+  <resource name="sWaterBottom4" type="RESOURCE"/>
+  <resource name="sWaterBottomTall1" type="RESOURCE"/>
+  <resource name="sWaterBottomTall2" type="RESOURCE"/>
+  <resource name="sWaterTop" type="RESOURCE"/>
+  <resource name="sLava" type="RESOURCE"/>
+  <resource name="sLavaTop" type="RESOURCE"/>
+</resources>

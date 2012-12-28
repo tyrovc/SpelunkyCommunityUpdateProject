@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sLadyXoc" type="RESOURCE"/>
+  <resource name="sGoldBlock" type="RESOURCE"/>
+  <resource name="sGoldBig" type="RESOURCE"/>
+  <resource name="sGold" type="RESOURCE"/>
+</resources>
