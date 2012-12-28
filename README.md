@@ -11,13 +11,19 @@ https://github.com/Medo42/Gmk-Splitter/downloads
 to turn the repo back into a .gmk
 
 Something along the lines of:
+
 java -jar gmksplit.jar /spelunky/ spelunky.gmk
+
 java -jar gmksplit.jar /config/ config.gmk
+
 
 Edit the gmk files with Game Maker 8 (not 8.1!)
 
+
 Then use:
+
 java -jar gmksplit.jar  spelunky.gmk spelunky
+
 java -jar gmksplit.jar  config.gmk config
 
 to export your changes back to the repo format.
