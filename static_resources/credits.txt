@@ -1,0 +1,16 @@
+Spelunky is a game by Derek Yu
+
+Gamemaker platform engine - Martin Piecyk
+
+Sound effects made using Dr. Petter's SFXR
+
+Screen Scaling Code by Chevyray
+
+Music by George Buzinkai and Jonathan Perry
+
+Spelunky 1.2 Project Contributers:
+TyrOvC
+Moloch
+halibabica
+Delver
+Everyone out there that reported bugs!
