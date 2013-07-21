@@ -1315,17 +1315,17 @@ else if (holdItem == 0)
                             }
                             scrShake(20);
                             trap = instance_nearest(x-64, y-64, oDoor);
-							if (trap)
-							{
+                            if (trap)
+                            {
                                trap.status = 1;
                                trap.yVel = 1;
-							}
+                            }
                             trap = instance_nearest(x+64, y-64, oDoor);
-							if (trap)
-							{
+                            if (trap)
+                            {
                                trap.status = 1;
                                trap.yVel = 1;
-							}
+                            }
                         }
                         else
                         {
