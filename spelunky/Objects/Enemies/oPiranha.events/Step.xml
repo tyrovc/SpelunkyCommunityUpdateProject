@@ -153,7 +153,14 @@ if (not collision_point(x+4, y+4, oWater, 0, 0))
     instance_create(x, y, oFishBone);
     instance_destroy();
 }
-}</argument>
+
+if (not collision_point(x+4, y, oWater, 0, 0))//Go back into the water when on the very top of it. Stops buggy movement after a water level change from block destruction.
+{
+    moveTo(0,1);
+}
+
+}
+</argument>
       </arguments>
     </action>
   </actions>
