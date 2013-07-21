@@ -13,7 +13,7 @@
       <not>false</not>
       <appliesTo>.self</appliesTo>
       <arguments>
-        <argument kind="STRING">if (status != STUNNED and status != EATING)
+        <argument kind="STRING">if (status != STUNNED and status != EATING and status != SLEEPY)
 {
     xVel = 0;
     status = EATING;

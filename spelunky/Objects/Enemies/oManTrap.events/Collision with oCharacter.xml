@@ -34,7 +34,7 @@ else if ((global.hasSpikeShoes or status == EATING) and not other.dead and not o
 }
 else if (other.visible and other.invincible == 0)
 {
-    if (status != STUNNED and status != EATING)
+    if (status != STUNNED and status != EATING and status != SLEEPY)
     {
         xVel = 0;
         status = EATING;
