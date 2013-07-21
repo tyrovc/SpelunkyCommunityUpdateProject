@@ -271,7 +271,7 @@ if (active)
         if (fallTimer &gt; 16) wallHurt = 0; // no sense in them taking extra damage from being thrown here
         if (global.hasParachute and not stunned and fallTimer &gt; 12)
         {
-            if (not collision_point(x, y+32, oSolid, 0, 0))
+            if (not collision_line(x, y+16, x, y+32, oSolid, 0, 0))
             {
                 instance_create(x-8, y-16, oParachute);
                 fallTimer = 0;
