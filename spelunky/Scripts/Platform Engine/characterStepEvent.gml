@@ -802,7 +802,7 @@ if (platformCharacterIs(ON_GROUND))
     
     // ledge flip
     if (state == DUCKING and abs(xVel) < 3 and facing == LEFT and
-        collision_point(x, y+9, oSolid, 0, 0) and not collision_point(x-1, y+9, oSolid, 0, 0) and kLeft)
+        collision_point(x, y+9, oSolid, 0, 0) and not collision_line(x-1, y+9, x-10, y+9, oSolid, 0, 0) and kLeft)
     {
         state = DUCKTOHANG;
         
@@ -827,7 +827,7 @@ if (platformCharacterIs(ON_GROUND))
         }
     }
     else if (state == DUCKING and abs(xVel) < 3 and facing == RIGHT and
-        collision_point(x, y+9, oSolid, 0, 0) and not collision_point(x+1, y+9, oSolid, 0, 0) and kRight)
+        collision_point(x, y+9, oSolid, 0, 0) and not collision_line(x+1, y+9, x+10, y+9, oSolid, 0, 0) and kRight)
     {
         state = DUCKTOHANG;
         
