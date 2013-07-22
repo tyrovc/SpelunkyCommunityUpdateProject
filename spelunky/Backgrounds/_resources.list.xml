@@ -29,4 +29,5 @@
   <resource name="bgAlienShip" type="RESOURCE"/>
   <resource name="bgAlienShip2" type="RESOURCE"/>
   <resource name="bgAlienShip3" type="RESOURCE"/>
+  <resource name="bgVineRoots" type="RESOURCE"/>
 </resources>

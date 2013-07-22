@@ -446,6 +446,7 @@ with oVine
 
     if (not up)
     {
+        tile_add(bgVineRoots, 0, 0, 16, 16, x, y-16, 1000);//Use same depth as the vine objects themselves
         sprite_index = sVineSource;
     }
     else if (not down)
