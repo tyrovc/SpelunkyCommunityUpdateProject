@@ -388,11 +388,16 @@ if (dead or stunned)
         xVel = -xVel * 0.5;
     }
     
-    if (isCollisionBottom(1) or isCollisionPlatformBottom(1))
+    var collisionbottomcheck;
+    collisionbottomcheck=isCollisionBottom(1);
+    if (collisionbottomcheck or isCollisionPlatformBottom(1))
     {
         // bounce
-        if (yVel &gt; 1) yVel = -yVel * 0.5;
-        else yVel = 0;
+        if (collisionbottomcheck)
+        {
+            if (yVel &gt; 2.5) yVel = -yVel * 0.5;
+            else yVel = 0;
+        } else fallTimer -= 1;//after falling onto a platform don't take extra damage after recovering from stunning
         
         // friction
         if (abs(xVel) &lt; 0.1) xVel = 0;
