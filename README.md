@@ -5,7 +5,7 @@ Community bug fixing and updates to the original Spelunky for PC
 
 Editing
 -------
-Use [Gmk-Splitter](https://github.com/Medo42/Gmk-Splitter/downloads) to turn the repo back into a `.gmk`
+Use [Gmk-Splitter](http://medo42.github.io/Gmk-Splitter/) to turn the repo back into a `.gmk`
 
 Something along the lines of:
 
