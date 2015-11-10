@@ -31,7 +31,7 @@ makeActive()
 setCollisionBounds(-2, -2, 2, 2)
 yOff = 2;
 alarm[0] = 20;
-value = 400;</argument>
+value = 300;</argument>
       </arguments>
     </action>
   </actions>
