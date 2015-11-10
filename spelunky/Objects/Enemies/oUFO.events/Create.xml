@@ -28,7 +28,7 @@
       <arguments>
         <argument kind="STRING">type = "UFO";
 image_speed = 0.5;
-setCollisionBounds(4, 2, 12, 14);
+setCollisionBounds(1, 0, 15, 14);
 origX = 0;
 origY = 0;
 xVel = 0;
