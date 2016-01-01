@@ -27,7 +27,7 @@
       <appliesTo>.self</appliesTo>
       <arguments>
         <argument kind="STRING">makeActive()
-setCollisionBounds(4, 4, 12, 16)
+setCollisionBounds(0, 2, 16, 16);
 xVel = 0
 yVel = 0
 yDelta = -0.4
