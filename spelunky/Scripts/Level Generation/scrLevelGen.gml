@@ -89,34 +89,33 @@ if (global.levelType == 3 and rand(1,global.probSacPit) == 1)
 while (roomY < 4)
 {
     d = false;
-    if (roomX == 0) n = rand(3,5) // right
-    else if (roomX == 3) n = rand(5,7) // left
-    else n = rand(1,5);
-    
-    if (n < 3 or n > 5) // move left
+    if (roomX == prevX)
     {
-        if (roomX > 0)
-            if (global.roomPath[roomX-1, roomY] == 0) roomX -= 1;
-        else if (roomX < 3)
-            if (global.roomPath[roomX+1, roomY] == 0) roomX += 1;
-        else n = 5;
+        if (roomX == 0) n = rand(3,5); // right
+        else if (roomX == 3) n = rand(5,7); // left
+        else n = rand(1,5);
     }
-    else if (n == 3 or n == 4) // move right
+    else if (roomX > prevX)
     {
-        if (roomX < 3)
-            if (global.roomPath[roomX+1, roomY] == 0) roomX += 1;
-        else if (roomX > 0)
-            if (global.roomPath[roomX-1, roomY] == 0) roomX -= 1;
-        else n = 5;
+        if (roomX == 3) n = 5;
+        else n = rand(3,5); // right
     }
+    else
+    {
+        if (roomX == 0) n = 5;
+        else n = rand(5,7); // left
+    }
+    prevX = roomX;
     
-    if (n == 5) // move down
+    if (n < 3 or n > 5) roomX -= 1; // move left
+    else if (n == 3 or n == 4) roomX += 1; // move right
+    else // move down
     {
         roomY += 1;
         d = true;
         if (roomY < 4)
         {
-            global.roomPath[prevX, prevY] = 2;
+            global.roomPath[roomX, roomY-1] = 2;
             global.roomPath[roomX, roomY] = 3;
             d = true;
         }
@@ -128,8 +127,6 @@ while (roomY < 4)
     }
     
     if (not d) global.roomPath[roomX, roomY] = 1;
-    prevX = roomX;
-    prevY = roomY;
 }
 
 // City of Gold
