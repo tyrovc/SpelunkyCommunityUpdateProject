@@ -35,7 +35,7 @@ fallCount = 0;
 px = 0;
 py = 0;
 safe = true;
-alarm[2] = 30;
+// alarm[2] = 30;
 </argument>
       </arguments>
     </action>
