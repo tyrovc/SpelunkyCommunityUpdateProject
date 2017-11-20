@@ -204,17 +204,11 @@ else if (roomPath == 5) // shop
 }
 else if (roomPath == 8) // snake pit
 {
-    switch(rand(1,1))
-    {
-        case 1: { strTemp = "111000011111s0000s11111200211111s0000s11111200211111s0000s11111200211111s0000s11"; break; }
-    }
+    strTemp = "111000011111s0000s11111200211111s0000s11111200211111s0000s11111200211111s0000s11";
 }
 else if (roomPath == 9) // snake pit bottom
 {
-    switch(rand(1,1))
-    {
-        case 1: { strTemp = "111000011111s0000s1111100001111100S0001111S0110S11111STTS1111111M111111111111111"; break; }
-    }    
+    strTemp = "111000011111s0000s1111100001111100S0001111S0110S11111STTS1111111M111111111111111";    
 }
 else // drop
 {

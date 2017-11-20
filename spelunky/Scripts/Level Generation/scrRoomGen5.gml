@@ -84,10 +84,7 @@ for (i = 1; i < 81; i += 1)
     
     if (tile == "8")
     {
-        switch(rand(1,1))
-        {
-            case 1: { strObs1 = "00900"; strObs2 = "21112"; strObs3 = "21112"; break; }
-        }
+        strObs1 = "00900"; strObs2 = "21112"; strObs3 = "21112";
     }
     else if (tile == "5") // ground
     {
@@ -172,7 +169,7 @@ for (j = 0; j < 8; j += 1)
         }
         else if (tile == "a")
         {
-            if (rand(1,1) == 1) instance_create(xpos+8, ypos+8, oChest);
+            instance_create(xpos+8, ypos+8, oChest);
         }
         else if (tile == "T")
         {
@@ -194,7 +191,7 @@ for (j = 0; j < 8; j += 1)
         }
         else if (tile == "I")
         {
-            if (rand(1,1) == 1) instance_create(xpos+16, ypos, oGoldIdol);
+            instance_create(xpos+16, ypos, oGoldIdol);
         }
         else if (tile == "C")
         {

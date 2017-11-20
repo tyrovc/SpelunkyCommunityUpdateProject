@@ -48,22 +48,12 @@ strTemp = "000000000000000000000000000000000000000000000000000000000000000000000
 roomPath = global.roomPath[scrGetRoomX(x), scrGetRoomY(y)];
 if (scrGetRoomX(x) == global.startRoomX and scrGetRoomY(y) == global.startRoomY) // start room
 {
-    if (roomPath == 2) n = rand(2,2);
-    else n = rand(1,1);
-    switch(n)
-    {
-        case 1: { strTemp = "00000000000000000000000000000000000000000008000000000000000000000000001111111111"; break; }
-        // hole
-        case 2: { strTemp = "00000000000000000000000000000000000000000008000000000000000000000000000011111110"; break; }
-    }
+    if (roomPath == 2) strTemp = "00000000000000000000000000000000000000000008000000000000000000000000000011111110";
+    else strTemp = "00000000000000000000000000000000000000000008000000000000000000000000001111111111";
 }
 else if (scrGetRoomX(x) == global.endRoomX and scrGetRoomY(y) == global.endRoomY) // end room
 {
-    n = rand(1,1);
-    switch(n)
-    {
-        case 1: { strTemp = "00000000000000000000000000000000000000000008000000000000000000000000001111111111"; break; }
-    }
+    strTemp = "00000000000000000000000000000000000000000008000000000000000000000000001111111111";
 }
 else if (roomPath == 0 and rand(1,2) == 1) // side room
 {
@@ -158,34 +148,10 @@ else if (roomPath == 6) // Moai
         case 2: { strTemp = "000000000000M000000000000000000000000000020001112002mmm1112000111111000000000000"; break; }
     }
 }
-else if (roomPath == 7)
-{
-    switch(rand(1,1))
-    {
-        case 1: { strTemp = "0000000000000DAAAAAA0iiiE0E0E00iG00000000C00000000000000000000BBBBBBBB0000000000"; break; }
-    }
-}
-else if (roomPath == 8)
-{
-    switch(rand(1,1))
-    {
-        case 1: { strTemp = "0000000000AAAAAAAAAAE0E0E0E0E0000000000000000000000000000000BBBBBBBBBB0000000000"; break; }
-    }
-}
-else if (roomPath == 9)
-{
-    switch(rand(1,1))
-    {
-        case 1: { strTemp = "0000022221AAAAAAAAA1E0E0Et2211000000X01100000000T1000022ii11BBBbbbbbbb0000222221"; break; }
-    }
-}
-else
-{
-    switch(rand(1,1))
-    {
-        case 1: { strTemp = "00000000000000000000000000000000005000000000000000000000000000021111120000222220"; break; }
-    }
-}
+else if (roomPath == 7) strTemp = "0000000000000DAAAAAA0iiiE0E0E00iG00000000C00000000000000000000BBBBBBBB0000000000";
+else if (roomPath == 8) strTemp = "0000000000AAAAAAAAAAE0E0E0E0E0000000000000000000000000000000BBBBBBBBBB0000000000";
+else if (roomPath == 9) strTemp = "0000022221AAAAAAAAA1E0E0Et2211000000X01100000000T1000022ii11BBBbbbbbbb0000222221";
+else strTemp = "00000000000000000000000000000000005000000000000000000000000000021111120000222220";
 
 // Add obstacles
 
@@ -321,7 +287,7 @@ for (j = 0; j < 8; j += 1)
         }
         else if (tile == "a")
         {
-            if (rand(1,1) == 1) instance_create(xpos, ypos, oChest);
+            instance_create(xpos, ypos, oChest);
         }
         else if (tile == "I")
         {

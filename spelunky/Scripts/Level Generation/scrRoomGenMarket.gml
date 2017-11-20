@@ -174,11 +174,7 @@ for (i = 1; i < 81; i += 1)
     
     if (tile == "8")
     {
-        n = rand(1,1);
-        switch(n)
-        {
-            case 1: { strObs1 = "00900"; strObs2 = "01110"; strObs3 = "11111"; break; }
-        }
+        strObs1 = "00900"; strObs2 = "01110"; strObs3 = "11111";
     }
     else if (tile == "5") // ground
     {
