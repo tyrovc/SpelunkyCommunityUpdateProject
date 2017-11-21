@@ -361,10 +361,6 @@ for (j = 0; j < 8; j += 1)
             tile_add(bgKaliBody, 0, 0, 64, 64, xpos-16, ypos-48, 10001);
             instance_create(xpos+16, ypos-80+16, oKaliHead);
         }
-        else if (tile == "a")
-        {
-            instance_create(xpos, ypos, oChest);
-        }
         else if (tile == "I")
         {
             instance_create(xpos+16, ypos+12, oGoldIdol);

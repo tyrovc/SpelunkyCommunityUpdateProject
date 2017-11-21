@@ -306,10 +306,7 @@ for (j = 0; j < 8; j += 1)
         {
             instance_create(xpos, ypos, oThinIce);
         }
-        else if (tile == "L") instance_create(xpos, ypos, oLadderOrange);
-        else if (tile == "P") instance_create(xpos, ypos, oLadderTop);
         else if (tile == "7" and rand(1,3) == 1) instance_create(xpos, ypos, oSpikes);
-        else if (tile == "4" and rand(1,4) == 1) instance_create(xpos, ypos, oPushBlock);
         else if (tile == "9")
         {
             block = instance_create(xpos, ypos+16, oDark);
@@ -327,10 +324,6 @@ for (j = 0; j < 8; j += 1)
         {
             instance_create(xpos, ypos, oAltarLeft);
             instance_create(xpos+16, ypos, oAltarRight);
-        }
-        else if (tile == "a")
-        {
-            instance_create(xpos, ypos, oChest);
         }
         else if (tile == "I")
         {

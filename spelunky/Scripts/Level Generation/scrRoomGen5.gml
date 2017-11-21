@@ -150,10 +150,6 @@ for (j = 0; j < 8; j += 1)
                 instance_create(xpos, ypos, oTemple);
             }
         }
-        else if (tile == "L") instance_create(xpos, ypos, oVine);
-        else if (tile == "P") instance_create(xpos, ypos, oVineTop);
-        else if (tile == "7" and rand(1,3) == 1) instance_create(xpos, ypos, oSpikes);
-        else if (tile == "4" and rand(1,4) == 1) instance_create(xpos, ypos, oPushBlock);
         else if (tile == "9")
         {
             if (scrGetRoomX(x) == global.startRoomX and scrGetRoomY(y) == global.startRoomY)
@@ -166,10 +162,6 @@ for (j = 0; j < 8; j += 1)
             }
             block = instance_create(xpos, ypos+16, oTemple);
             block.invincible = true;
-        }
-        else if (tile == "a")
-        {
-            instance_create(xpos+8, ypos+8, oChest);
         }
         else if (tile == "T")
         {
@@ -185,27 +177,9 @@ for (j = 0; j < 8; j += 1)
                 instance_create(xpos, ypos, oTemple);
             }
         }
-        else if (tile == "t")
-        {
-            instance_create(xpos, ypos, oThwompTrap);
-        }
         else if (tile == "I")
         {
             instance_create(xpos+16, ypos, oGoldIdol);
-        }
-        else if (tile == "C")
-        {
-            instance_create(xpos, ypos, oCeilingTrap);
-        }
-        else if (tile == "D")
-        {
-            instance_create(xpos, ypos, oTempleFake);
-            instance_create(xpos, ypos+16, oTempleFake);
-            instance_create(xpos, ypos, oDoor);
-        }
-        else if (tile == "w")
-        {
-            instance_create(xpos, ypos, oWaterSwim);
         }
     }
 }

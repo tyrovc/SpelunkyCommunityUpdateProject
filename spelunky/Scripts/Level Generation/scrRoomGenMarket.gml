@@ -246,22 +246,15 @@ for (j = 0; j < 8; j += 1)
         {
             instance_create(xpos, ypos, oLush);
         }
-        if (tile == "t" and not collision_point(xpos, ypos, oSolid, 0, 0))
-        {
-            instance_create(xpos, ypos, oTemple);
-        }
         else if (tile == "3" and not collision_point(xpos, ypos, oSolid, 0, 0))
         {
             if (rand(1,2) == 1) instance_create(xpos, ypos, oWaterSwim);
             else instance_create(xpos, ypos, oLush);
         }
         else if (tile == "L") instance_create(xpos, ypos, oVine);
-        else if (tile == "P") instance_create(xpos, ypos, oVineTop);
         else if (tile == "G") instance_create(xpos, ypos, oLadderOrange);
         else if (tile == "H") instance_create(xpos, ypos, oLadderTop);
-        else if (tile == "7" and rand(1,3) == 1) instance_create(xpos, ypos, oSpikes);
         else if (tile == "s") instance_create(xpos, ypos, oSpikes);
-        else if (tile == "4") instance_create(xpos, ypos, oPushBlock);
         else if (tile == "9")
         {
             block = instance_create(xpos, ypos+16, oLush);
@@ -275,22 +268,9 @@ for (j = 0; j < 8; j += 1)
                 block.invincible = true;
             }
         }
-        else if (tile == "c")
-        {
-            instance_create(xpos, ypos, oChest);
-        }
-        else if (tile == "d")
-        {
-            instance_create(xpos, ypos, oWaterSwim);
-            instance_create(xpos, ypos, oChest);
-        }
         else if (tile == "w")
         {
             instance_create(xpos, ypos, oWaterSwim);
-        }
-        else if (tile == "I")
-        {
-            instance_create(xpos+16, ypos+8, oGoldIdol);
         }
         else if (tile == "." and not collision_point(xpos, ypos, oSolid, 0, 0))
         {
@@ -361,15 +341,6 @@ for (j = 0; j < 8; j += 1)
         else if (tile == "z")
         {
             instance_create(xpos+8, ypos+8, oDice);
-        }
-        else if (tile == "B")
-        {
-            instance_create(xpos, ypos, oTrapBlock);
-        }
-        else if (tile == "p")
-        {
-            if (rand(1,2)) instance_create(xpos, ypos, oFakeBones);
-            else instance_create(xpos+8, ypos+10, oJar);
         }
         else if (tile == "T")
         {

@@ -268,8 +268,6 @@ for (j = 0; j < 8; j += 1)
             if (rand(1,10) == 1) instance_create(xpos, ypos, oIce);
             else instance_create(xpos, ypos, oDark);
         }
-        else if (tile == "L") instance_create(xpos, ypos, oVine);
-        else if (tile == "P") instance_create(xpos, ypos, oVine);
         else if (tile == "7") instance_create(xpos, ypos, oSpikes);
         else if (tile == "4" and rand(1,4) == 1) instance_create(xpos, ypos, oPushBlock);
         else if (tile == "9")
@@ -284,10 +282,6 @@ for (j = 0; j < 8; j += 1)
                 global.exitY = ypos;
                 block.invincible = true;
             }
-        }
-        else if (tile == "a")
-        {
-            instance_create(xpos, ypos, oChest);
         }
         else if (tile == "I")
         {
@@ -366,10 +360,6 @@ for (j = 0; j < 8; j += 1)
             obj = instance_create(xpos+8, ypos+8, oDamsel);
             obj.forSale = true;
             obj.status = 5;
-        }
-        else if (tile == "Y")
-        {
-            instance_create(xpos, ypos, oYeti);
         }
         else if (tile == "A")
         {
@@ -483,10 +473,6 @@ for (j = 0; j < 8; j += 1)
         else if (tile == "f")
         {
             instance_create(xpos, ypos, oDarkFall);
-        }
-        else if (tile == "w")
-        {
-            instance_create(xpos, ypos, oWaterSwim);
         }
     }
 }

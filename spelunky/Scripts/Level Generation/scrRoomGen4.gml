@@ -324,7 +324,6 @@ for (j = 0; j < 8; j += 1)
         }
         else if (tile == "L") instance_create(xpos, ypos, oLadderOrange);
         else if (tile == "P") instance_create(xpos, ypos, oLadderTop);
-        else if (tile == "7" and rand(1,3) == 1) instance_create(xpos, ypos, oSpikes);
         else if (tile == "4" and rand(1,4) == 1) instance_create(xpos, ypos, oPushBlock);
         else if (tile == "9")
         {
@@ -338,10 +337,6 @@ for (j = 0; j < 8; j += 1)
                 global.exitY = ypos;
                 block.invincible = true;
             }
-        }
-        else if (tile == "a")
-        {
-            instance_create(xpos+8, ypos+8, oChest);
         }
         else if (tile == "c")
         {
@@ -492,10 +487,6 @@ for (j = 0; j < 8; j += 1)
         else if (tile == "d")
         {
             instance_create(xpos, ypos, oLush);
-        }
-        else if (tile == "e")
-        {
-            if (rand(1,2) == 1) instance_create(xpos, ypos, oLush);
         }
         else if (tile == "T")
         {
