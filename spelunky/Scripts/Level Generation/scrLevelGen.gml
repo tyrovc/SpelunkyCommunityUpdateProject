@@ -206,31 +206,34 @@ if (global.lake)
     global.roomPath[n,4] = 9;
 }
 
-// Moai
-if (not global.madeMoai and global.levelType == 2)
+
+if (global.levelType == 2)
 {
-    if (global.currLevel == 9 and rand(1,4) == 1) global.madeMoai = true;
-    else if (global.currLevel == 10 and rand(1,3) == 1) global.madeMoai = true;
-    else if (global.currLevel == 11 and rand(1,2) == 1) global.madeMoai = true;
-    else if (global.currLevel == 12) global.madeMoai = true;
-    
-    if (global.madeMoai) global.roomPath[rand(0,3), rand(1,2)] = 6;
-}
-else if (global.levelType == 2 and rand(1,global.probAlien) == 1) // alien craft
-{
-    k = rand(0,2);
-    j = rand(1,2);
-    for (i = k; i < 4; i += 1)
+    if (not global.madeMoai) // Moai
     {
-        if (i == k) global.roomPath[i,j] = 7;
-        else if (i == 3) global.roomPath[i,j] = 9;
-        else global.roomPath[i,j] = 8;
+        if (global.currLevel == 9 and rand(1,4) == 1) global.madeMoai = true;
+        else if (global.currLevel == 10 and rand(1,3) == 1) global.madeMoai = true;
+        else if (global.currLevel == 11 and rand(1,2) == 1) global.madeMoai = true;
+        else if (global.currLevel == 12) global.madeMoai = true;
+        
+        if (global.madeMoai) global.roomPath[rand(0,3), rand(1,2)] = 6;
     }
-    global.alienCraft = true;
-}
-else if (global.levelType == 2 and not global.alienCraft and rand(1,global.probYetiLair) == 1) // yeti
-{
-    global.yetiLair = true;
+    else if (rand(1,global.probAlien) == 1) // alien craft
+    {
+        k = rand(0,2);
+        j = rand(1,2);
+        for (i = k; i < 4; i += 1)
+        {
+            if (i == k) global.roomPath[i,j] = 7;
+            else if (i == 3) global.roomPath[i,j] = 9;
+            else global.roomPath[i,j] = 8;
+        }
+        global.alienCraft = true;
+    }
+    else if (not global.alienCraft and rand(1,global.probYetiLair) == 1) // yeti
+    {
+        global.yetiLair = true;
+    }
 }
 
 // shop
