@@ -221,10 +221,7 @@ else if (roomPath == 8) // Lake Top
 }
 else if (roomPath == 9) // Mega Mouth
 {
-    switch(rand(1,1))
-    {
-        case 1: { strTemp = "wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwJwwwwwwwwwwwwwwwwwwwwwwwwww,,,,,,,,,,"; break; }
-    }
+    strTemp = "wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwJwwwwwwwwwwwwwwwwwwwwwwwwww,,,,,,,,,,";
 }
 else // drop
 {
@@ -256,11 +253,7 @@ for (i = 1; i < 81; i += 1)
     
     if (tile == "8")
     {
-        n = rand(1,1);
-        switch(n)
-        {
-            case 1: { strObs1 = "00900"; strObs2 = "01110"; strObs3 = "11111"; break; }
-        }
+        strObs1 = "00900"; strObs2 = "01110"; strObs3 = "11111";
     }
     else if (tile == "5") // ground
     {
@@ -347,7 +340,6 @@ for (j = 0; j < 8; j += 1)
             else instance_create(xpos, ypos, oLush);
         }
         else if (tile == "L") instance_create(xpos, ypos, oVine);
-        else if (tile == "P") instance_create(xpos, ypos, oVineTop);
         else if (tile == "7" and rand(1,3) == 1) instance_create(xpos, ypos, oSpikes);
         else if (tile == "s") instance_create(xpos, ypos, oSpikes);
         else if (tile == "4") instance_create(xpos, ypos, oPushBlock);
@@ -363,15 +355,6 @@ for (j = 0; j < 8; j += 1)
                 global.exitY = ypos;
                 block.invincible = true;
             }
-        }
-        else if (tile == "c")
-        {
-            instance_create(xpos, ypos, oChest);
-        }
-        else if (tile == "d")
-        {
-            instance_create(xpos, ypos, oWaterSwim);
-            instance_create(xpos, ypos, oChest);
         }
         else if (tile == "w")
         {

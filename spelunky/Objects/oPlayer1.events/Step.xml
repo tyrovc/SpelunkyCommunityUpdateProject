@@ -1172,7 +1172,7 @@ else if (inGame and kRopePressed and global.rope &gt; 0 and not whipping)
                 armed = false;
                 falling = true;
                 xVel = 0;
-                yVel = 0;
+                yVel = 8;
                 global.rope -= 1;
                 playSound(global.sndThrow);
             }

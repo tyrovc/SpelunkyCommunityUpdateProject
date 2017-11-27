@@ -43,14 +43,14 @@
     armed = false;
     falling = true;
     xVel = 0;
-    yVel = 0;
+    yVel = 8;
+    y += 8;
 }
 
 if (falling)
 {
     xVel = 0;
-    yVel = 0;
-    y += 8;
+    yVel = 8;
     fallCount += 1;
     if (isCollisionBottom(1) or fallCount &gt; 16)
     {

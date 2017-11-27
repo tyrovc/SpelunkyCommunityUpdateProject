@@ -83,7 +83,7 @@ else if (roomPath == 0 and rand(1,4) < 4) // side room
         n = rand(1,2);
     else
     {
-        n = rand(1,1);
+        n = 1;
         if (n == 10) oGame.idol = true;
         // else n = rand(1,9);
     }
@@ -181,17 +181,11 @@ else if (roomPath == 5) // shop
 }
 else if (roomPath == 8) // snake pit
 {
-    switch(rand(1,1))
-    {
-        case 1: { strTemp = "111000011111s0000s11111200211111s0000s11111200211111s0000s11111200211111s0000s11"; break; }
-    }
+    strTemp = "111000011111s0000s11111200211111s0000s11111200211111s0000s11111200211111s0000s11";
 }
 else if (roomPath == 9) // snake pit bottom
 {
-    switch(rand(1,1))
-    {
-        case 1: { strTemp = "111000011111s0000s1111100001111100S0001111S0110S11111STTS11111111111111111111111"; break; }
-    }    
+    strTemp = "111000011111s0000s1111100001111100S0001111S0110S11111STTS11111111111111111111111";    
 }
 else // drop
 {
@@ -312,10 +306,7 @@ for (j = 0; j < 8; j += 1)
         {
             instance_create(xpos, ypos, oThinIce);
         }
-        else if (tile == "L") instance_create(xpos, ypos, oLadderOrange);
-        else if (tile == "P") instance_create(xpos, ypos, oLadderTop);
         else if (tile == "7" and rand(1,3) == 1) instance_create(xpos, ypos, oSpikes);
-        else if (tile == "4" and rand(1,4) == 1) instance_create(xpos, ypos, oPushBlock);
         else if (tile == "9")
         {
             block = instance_create(xpos, ypos+16, oDark);
@@ -333,10 +324,6 @@ for (j = 0; j < 8; j += 1)
         {
             instance_create(xpos, ypos, oAltarLeft);
             instance_create(xpos+16, ypos, oAltarRight);
-        }
-        else if (tile == "a")
-        {
-            instance_create(xpos, ypos, oChest);
         }
         else if (tile == "I")
         {
